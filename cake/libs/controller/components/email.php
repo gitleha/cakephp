@@ -411,7 +411,7 @@ class EmailComponent extends Object{
 
 			$content = $View->element('email' . DS . 'text' . DS . $this->template, array('content' => $content), true);
 			$View->layoutPath = 'email' . DS . 'text';
-			$content = explode("\n", str_replace(array("\r\n", "\r"), "\n", $View->renderLayout($content)));
+			$content = explode("\n", str_replace(array("\r\n", "\r"), "\n", htmlspecialchars_decode(htmlentities($View->renderLayout($content)))));
 			$msg = array_merge($msg, $content);
 
 			$msg[] = '';
@@ -422,7 +422,7 @@ class EmailComponent extends Object{
 
 			$htmlContent = $View->element('email' . DS . 'html' . DS . $this->template, array('content' => $htmlContent), true);
 			$View->layoutPath = 'email' . DS . 'html';
-			$htmlContent = explode("\n", str_replace(array("\r\n", "\r"), "\n", $View->renderLayout($htmlContent)));
+			$htmlContent = explode("\n", str_replace(array("\r\n", "\r"), "\n", htmlspecialchars_decode(htmlentities($View->renderLayout($htmlContent)))));
 			$msg = array_merge($msg, $htmlContent);
 
 			$msg[] = '';
@@ -450,7 +450,7 @@ class EmailComponent extends Object{
 
 		$content = $View->element('email' . DS . $this->sendAs . DS . $this->template, array('content' => $content), true);
 		$View->layoutPath = 'email' . DS . $this->sendAs;
-		$content = explode("\n", str_replace(array("\r\n", "\r"), "\n", $View->renderLayout($content)));
+		$content = explode("\n", str_replace(array("\r\n", "\r"), "\n", htmlspecialchars_decode(htmlentities($View->renderLayout($content)))));
 		$msg = array_merge($msg, $content);
 		ClassRegistry::removeObject('view');
 
