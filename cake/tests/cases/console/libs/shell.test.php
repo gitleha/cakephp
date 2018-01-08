@@ -94,8 +94,8 @@ class ShellTest extends CakeTestCase {
  * @access public
  */
 	function setUp() {
-		$this->Dispatcher =& new TestShellMockShellDispatcher();
-		$this->Shell =& new TestShell($this->Dispatcher);
+		$this->Dispatcher = new TestShellMockShellDispatcher();
+		$this->Shell = new TestShell($this->Dispatcher);
 	}
 /**
  * tearDown method

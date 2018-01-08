@@ -28,7 +28,7 @@
  * @package       cake
  * @subpackage    cake.cake.libs
  */
-class Cache extends Object {
+class Cache extends CakeObject {
 /**
  * Cache engine to use
  *
@@ -67,7 +67,7 @@ class Cache extends Object {
 	function &getInstance() {
 		static $instance = array();
 		if (!$instance) {
-			$instance[0] =& new Cache();
+			$instance[0] = new Cache();
 		}
 		return $instance[0];
 	}
@@ -147,7 +147,7 @@ class Cache extends Object {
 			if ($_this->__loadEngine($name) === false) {
 				return false;
 			}
-			$_this->_Engine[$name] =& new $cacheClass();
+			$_this->_Engine[$name] = new $cacheClass();
 		}
 
 		if ($_this->_Engine[$name]->init($settings)) {
@@ -409,7 +409,7 @@ class Cache extends Object {
  * @package       cake
  * @subpackage    cake.cake.libs
  */
-class CacheEngine extends Object {
+class CacheEngine extends CakeObject {
 /**
  * settings of current engine instance
  *

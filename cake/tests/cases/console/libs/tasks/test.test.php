@@ -62,8 +62,8 @@ class TestTaskTest extends CakeTestCase {
  * @access public
  */
 	function setUp() {
-		$this->Dispatcher =& new TestTestTaskMockShellDispatcher();
-		$this->Task =& new MockTestTask($this->Dispatcher);
+		$this->Dispatcher = new TestTestTaskMockShellDispatcher();
+		$this->Task = new MockTestTask($this->Dispatcher);
 		$this->Task->Dispatch =& $this->Dispatcher;
 	}
 /**

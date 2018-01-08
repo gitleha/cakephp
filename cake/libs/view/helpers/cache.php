@@ -288,7 +288,7 @@ class CacheHelper extends AppHelper {
 			';
 		}
 
-		$file .= '$controller =& new ' . $this->controllerName . 'Controller();
+		$file .= '$controller = new ' . $this->controllerName . 'Controller();
 				$controller->plugin = $this->plugin = \''.$this->plugin.'\';
 				$controller->helpers = $this->helpers = unserialize(\'' . serialize($this->helpers) . '\');
 				$controller->base = $this->base = \'' . $this->base . '\';

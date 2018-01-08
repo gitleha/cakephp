@@ -83,8 +83,8 @@ class AclShellTest extends CakeTestCase {
  * @access public
  */
 	function startTest() {
-		$this->Dispatcher =& new TestAclShellMockShellDispatcher();
-		$this->Task =& new MockAclShell($this->Dispatcher);
+		$this->Dispatcher = new TestAclShellMockShellDispatcher();
+		$this->Task = new MockAclShell($this->Dispatcher);
 		$this->Task->Dispatch =& $this->Dispatcher;
 		$this->Task->params['datasource'] = 'test_suite';
 	}

@@ -51,7 +51,7 @@
 	require CORE_PATH . 'cake' . DS . 'basics.php';
 	$TIME_START = getMicrotime();
 	require CORE_PATH . 'cake' . DS . 'config' . DS . 'paths.php';
-	require LIBS . 'object.php';
+	require LIBS . 'cake_object.php';
 	require LIBS . 'inflector.php';
 	require LIBS . 'configure.php';
 

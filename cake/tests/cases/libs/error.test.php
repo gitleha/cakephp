@@ -35,7 +35,7 @@ if (!defined('CAKEPHP_UNIT_TEST_EXECUTION')) {
  * @package       cake
  * @subpackage    cake.tests.cases.libs
  */
-class BlueberryComponent extends Object {
+class BlueberryComponent extends CakeObject {
 /**
  * testName property
  *
@@ -260,7 +260,7 @@ class ErrorHandlerTest extends CakeTestCase {
 	 	$this->assertPattern("/<strong>'\/test_error'<\/strong>/", $result);
 
 		ob_start();
-		$TestErrorHandler =& new TestErrorHandler('error404', array('message' => 'Page not found'));
+		$TestErrorHandler = new TestErrorHandler('error404', array('message' => 'Page not found'));
 		ob_get_clean();
 		ob_start();
 		$TestErrorHandler->error404(array(

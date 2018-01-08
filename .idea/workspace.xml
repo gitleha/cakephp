@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cbba9fe1-1501-4aaf-9452-5ea0f3c1e11a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/cake/bootstrap.php" afterPath="$PROJECT_DIR$/cake/bootstrap.php" />
+      <change beforePath="$PROJECT_DIR$/cake/console/cake.php" afterPath="$PROJECT_DIR$/cake/console/cake.php" />
+      <change beforePath="$PROJECT_DIR$/cake/console/error.php" afterPath="$PROJECT_DIR$/cake/console/error.php" />
+      <change beforePath="$PROJECT_DIR$/cake/console/libs/console.php" afterPath="$PROJECT_DIR$/cake/console/libs/console.php" />
+      <change beforePath="$PROJECT_DIR$/cake/console/libs/schema.php" afterPath="$PROJECT_DIR$/cake/console/libs/schema.php" />
+      <change beforePath="$PROJECT_DIR$/cake/console/libs/shell.php" afterPath="$PROJECT_DIR$/cake/console/libs/shell.php" />
+      <change beforePath="$PROJECT_DIR$/cake/console/libs/tasks/model.php" afterPath="$PROJECT_DIR$/cake/console/libs/tasks/model.php" />
+      <change beforePath="$PROJECT_DIR$/cake/console/libs/tasks/project.php" afterPath="$PROJECT_DIR$/cake/console/libs/tasks/project.php" />
+      <change beforePath="$PROJECT_DIR$/cake/console/libs/tasks/view.php" afterPath="$PROJECT_DIR$/cake/console/libs/tasks/view.php" />
+      <change beforePath="$PROJECT_DIR$/cake/dispatcher.php" afterPath="$PROJECT_DIR$/cake/dispatcher.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/cache.php" afterPath="$PROJECT_DIR$/cake/libs/cache.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/cache/file.php" afterPath="$PROJECT_DIR$/cake/libs/cache/file.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/cache/memcache.php" afterPath="$PROJECT_DIR$/cake/libs/cache/memcache.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/class_registry.php" afterPath="$PROJECT_DIR$/cake/libs/class_registry.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/configure.php" afterPath="$PROJECT_DIR$/cake/libs/configure.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/controller/component.php" afterPath="$PROJECT_DIR$/cake/libs/controller/component.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/controller/components/acl.php" afterPath="$PROJECT_DIR$/cake/libs/controller/components/acl.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/controller/components/auth.php" afterPath="$PROJECT_DIR$/cake/libs/controller/components/auth.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/controller/components/cookie.php" afterPath="$PROJECT_DIR$/cake/libs/controller/components/cookie.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/controller/components/email.php" afterPath="$PROJECT_DIR$/cake/libs/controller/components/email.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/controller/components/request_handler.php" afterPath="$PROJECT_DIR$/cake/libs/controller/components/request_handler.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/controller/components/security.php" afterPath="$PROJECT_DIR$/cake/libs/controller/components/security.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/controller/controller.php" afterPath="$PROJECT_DIR$/cake/libs/controller/controller.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/controller/scaffold.php" afterPath="$PROJECT_DIR$/cake/libs/controller/scaffold.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/debugger.php" afterPath="$PROJECT_DIR$/cake/libs/debugger.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/error.php" afterPath="$PROJECT_DIR$/cake/libs/error.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/file.php" afterPath="$PROJECT_DIR$/cake/libs/file.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/flay.php" afterPath="$PROJECT_DIR$/cake/libs/flay.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/folder.php" afterPath="$PROJECT_DIR$/cake/libs/folder.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/i18n.php" afterPath="$PROJECT_DIR$/cake/libs/i18n.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/inflector.php" afterPath="$PROJECT_DIR$/cake/libs/inflector.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/l10n.php" afterPath="$PROJECT_DIR$/cake/libs/l10n.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/magic_db.php" afterPath="$PROJECT_DIR$/cake/libs/magic_db.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/model/behavior.php" afterPath="$PROJECT_DIR$/cake/libs/model/behavior.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/model/behaviors/tree.php" afterPath="$PROJECT_DIR$/cake/libs/model/behaviors/tree.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/model/connection_manager.php" afterPath="$PROJECT_DIR$/cake/libs/model/connection_manager.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/model/datasources/datasource.php" afterPath="$PROJECT_DIR$/cake/libs/model/datasources/datasource.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/model/datasources/dbo/dbo_mysql.php" afterPath="$PROJECT_DIR$/cake/libs/model/datasources/dbo/dbo_mysql.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/model/datasources/dbo/dbo_mysqli.php" afterPath="$PROJECT_DIR$/cake/libs/model/datasources/dbo/dbo_mysqli.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/model/datasources/dbo_source.php" afterPath="$PROJECT_DIR$/cake/libs/model/datasources/dbo_source.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/model/model.php" afterPath="$PROJECT_DIR$/cake/libs/model/model.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/model/schema.php" afterPath="$PROJECT_DIR$/cake/libs/model/schema.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/multibyte.php" afterPath="$PROJECT_DIR$/cake/libs/multibyte.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/object.php" afterPath="$PROJECT_DIR$/cake/libs/cake_object.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/overloadable_php4.php" afterPath="$PROJECT_DIR$/cake/libs/overloadable_php4.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/overloadable_php5.php" afterPath="$PROJECT_DIR$/cake/libs/overloadable_php5.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/router.php" afterPath="$PROJECT_DIR$/cake/libs/router.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/security.php" afterPath="$PROJECT_DIR$/cake/libs/security.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/session.php" afterPath="$PROJECT_DIR$/cake/libs/session.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/set.php" afterPath="$PROJECT_DIR$/cake/libs/set.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/socket.php" afterPath="$PROJECT_DIR$/cake/libs/socket.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/string.php" afterPath="$PROJECT_DIR$/cake/libs/string_class.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/validation.php" afterPath="$PROJECT_DIR$/cake/libs/validation.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/view/helpers/cache.php" afterPath="$PROJECT_DIR$/cake/libs/view/helpers/cache.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/view/helpers/html.php" afterPath="$PROJECT_DIR$/cake/libs/view/helpers/html.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/view/helpers/javascript.php" afterPath="$PROJECT_DIR$/cake/libs/view/helpers/javascript.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/view/helpers/js.php" afterPath="$PROJECT_DIR$/cake/libs/view/helpers/js.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/view/helpers/session.php" afterPath="$PROJECT_DIR$/cake/libs/view/helpers/session.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/view/helpers/xml.php" afterPath="$PROJECT_DIR$/cake/libs/view/helpers/xml.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/view/view.php" afterPath="$PROJECT_DIR$/cake/libs/view/view.php" />
+      <change beforePath="$PROJECT_DIR$/cake/libs/xml.php" afterPath="$PROJECT_DIR$/cake/libs/xml.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/console/cake.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/console/cake.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/console/libs/acl.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/console/libs/acl.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/console/libs/api.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/console/libs/api.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/console/libs/schema.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/console/libs/schema.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/console/libs/shell.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/console/libs/shell.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/console/libs/tasks/extract.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/console/libs/tasks/extract.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/console/libs/tasks/model.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/console/libs/tasks/model.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/console/libs/tasks/test.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/console/libs/tasks/test.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/dispatcher.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/dispatcher.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/cake_test_case.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/cake_test_case.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/cake_test_fixture.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/cake_test_fixture.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/code_coverage_manager.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/code_coverage_manager.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/component.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/component.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/acl.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/acl.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/auth.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/auth.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/email.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/email.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/request_handler.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/request_handler.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/security.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/security.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/session.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/components/session.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/controller.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/controller.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/controller_merge_vars.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/controller_merge_vars.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/pages_controller.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/pages_controller.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/controller/scaffold.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/controller/scaffold.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/error.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/error.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/file.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/file.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/folder.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/folder.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/http_socket.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/http_socket.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/l10n.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/l10n.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/magic_db.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/magic_db.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/behavior.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/behavior.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/behaviors/acl.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/behaviors/acl.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/behaviors/containable.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/behaviors/containable.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/behaviors/translate.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/behaviors/translate.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/behaviors/tree.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/behaviors/tree.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_mysql.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_mysql.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_mysqli.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_mysqli.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_oracle.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_oracle.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_postgres.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_postgres.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_sqlite.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo/dbo_sqlite.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo_source.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/datasources/dbo_source.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/db_acl.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/db_acl.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_delete.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_delete.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_integration.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_integration.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_read.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_read.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_validation.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_validation.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_write.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/model_write.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/model/schema.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/model/schema.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/object.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/object.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/sanitize.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/sanitize.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/session.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/session.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/string.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/string.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/test_manager.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/test_manager.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/ajax.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/ajax.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/form.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/form.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/html.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/html.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/javascript.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/javascript.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/number.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/number.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/paginator.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/paginator.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/rss.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/rss.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/xml.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/helpers/xml.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/theme.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/theme.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/view/view.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/view/view.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/cases/libs/xml.test.php" afterPath="$PROJECT_DIR$/cake/tests/cases/libs/xml.test.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/lib/cake_test_case.php" afterPath="$PROJECT_DIR$/cake/tests/lib/cake_test_case.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/lib/cake_test_fixture.php" afterPath="$PROJECT_DIR$/cake/tests/lib/cake_test_fixture.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/lib/code_coverage_manager.php" afterPath="$PROJECT_DIR$/cake/tests/lib/code_coverage_manager.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/lib/test_manager.php" afterPath="$PROJECT_DIR$/cake/tests/lib/test_manager.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/test_app/plugins/test_plugin/controllers/components/other_component.php" afterPath="$PROJECT_DIR$/cake/tests/test_app/plugins/test_plugin/controllers/components/other_component.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/test_app/plugins/test_plugin/controllers/components/plugins_component.php" afterPath="$PROJECT_DIR$/cake/tests/test_app/plugins/test_plugin/controllers/components/plugins_component.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/test_app/plugins/test_plugin/controllers/components/test_plugin_component.php" afterPath="$PROJECT_DIR$/cake/tests/test_app/plugins/test_plugin/controllers/components/test_plugin_component.php" />
+      <change beforePath="$PROJECT_DIR$/cake/tests/test_app/plugins/test_plugin/controllers/components/test_plugin_other_component.php" afterPath="$PROJECT_DIR$/cake/tests/test_app/plugins/test_plugin/controllers/components/test_plugin_other_component.php" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+    </list>
+    <ignored path="cakephp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="cakephp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="html.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cake/libs/view/helpers/html.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="281" column="27" lean-forward="false" selection-start-line="281" selection-start-column="27" selection-end-line="281" selection-end-column="27" />
+              <folding>
+                <marker date="1514997959557" expanded="true" signature="1999:2005" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cake/libs/view/helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="176" column="26" lean-forward="false" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cake/libs/router.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="739" column="9" lean-forward="false" selection-start-line="739" selection-start-column="9" selection-end-line="739" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>afterFind</find>
+      <find>setup</find>
+      <find>String_cla</find>
+      <find>StringC</find>
+      <find>error()</find>
+      <find>beforeDelete</find>
+      <find>listSources</find>
+      <find>describe</find>
+      <find>BehaviorCollect</find>
+      <find>function dispatchP</find>
+      <find>$model</find>
+      <find>dispatchMethod</find>
+      <find>dispatchMethod(</find>
+      <find>BehaviorColl</find>
+      <find>extends CakeSession</find>
+      <find>write</find>
+      <find>write(</find>
+      <find>value(</find>
+      <find>function value</find>
+      <find>function button</find>
+      <find>CIPHER</find>
+      <find>function write(</find>
+      <find>CIPHER_SEED</find>
+      <find>srand</find>
+      <find>cipher</find>
+      <find>extends Object</find>
+      <find>Object</find>
+      <find>object.php</find>
+      <find>'object'</find>
+      <find>link(</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>= new</replace>
+      <replace>StringClass::</replace>
+      <replace>'StringClass'</replace>
+      <replace>extends CakeObject</replace>
+    </replaceStrings>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cake/libs/debugger.php" />
+        <option value="$PROJECT_DIR$/cake/libs/string.php" />
+        <option value="$PROJECT_DIR$/cake/libs/inflector.php" />
+        <option value="$PROJECT_DIR$/cake/basics.php" />
+        <option value="$PROJECT_DIR$/cake/libs/set.php" />
+        <option value="$PROJECT_DIR$/cake/libs/model/behaviors/tree.php" />
+        <option value="$PROJECT_DIR$/cake/libs/model/datasources/dbo/dbo_mysqli.php" />
+        <option value="$PROJECT_DIR$/cake/libs/model/datasources/dbo/dbo_mysql.php" />
+        <option value="$PROJECT_DIR$/cake/libs/model/model.php" />
+        <option value="$PROJECT_DIR$/cake/libs/model/behavior.php" />
+        <option value="$PROJECT_DIR$/cake/libs/view/helpers/session.php" />
+        <option value="$PROJECT_DIR$/cake/libs/view/helpers/javascript.php" />
+        <option value="$PROJECT_DIR$/cake/libs/security.php" />
+        <option value="$PROJECT_DIR$/cake/libs/object.php" />
+        <option value="$PROJECT_DIR$/cake/console/cake.php" />
+        <option value="$PROJECT_DIR$/cake/libs/configure.php" />
+        <option value="$PROJECT_DIR$/cake/libs/view/helpers/html.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="cd998367-a894-46b7-b99e-9ad8a8493189" name="localhost" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/cake/console/libs/templates/skel" remote-root="/var/www/html/lehapanel" />
+        </path_mappings>
+      </server>
+      <server host="lehapanel.local" id="ce1a4283-8bca-42a3-8440-7610f9fa521e" name="lehapanel.local" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/cake/console/libs/templates/skel/webroot" remote-root="/var/www/html/lehapanel/webroot" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="153" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cakephp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cakephp" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cakephp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cakephp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cake" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cakephp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cakephp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cake" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cakephp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cakephp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cake" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cakephp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cakephp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cake" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lehapanel" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cbba9fe1-1501-4aaf-9452-5ea0f3c1e11a" name="Default" comment="" />
+      <created>1493997044172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1493997044172</updated>
+      <workItem from="1514892405359" duration="16361000" />
+      <workItem from="1514994743419" duration="2576000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="18937000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="153" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22166944" sideWeight="0.6709265" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/cake/libs/inflector.php</url>
+          <line>128</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/cake/libs/inflector.php</url>
+          <line>129</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/cake/libs/model/model.php</url>
+          <line>458</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/cake/libs/controller/components/cookie.php</url>
+          <line>192</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/cake/libs/view/helpers/html.php</url>
+          <line>280</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/behavior.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/helpers/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3150">
+          <caret line="175" column="32" lean-forward="false" selection-start-line="175" selection-start-column="32" selection-end-line="175" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/helpers/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19386">
+          <caret line="1077" column="45" lean-forward="false" selection-start-line="1077" selection-start-column="45" selection-end-line="1077" selection-end-column="45" />
+          <folding>
+            <marker date="1465821045438" expanded="true" signature="9898:9911" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3078">
+          <caret line="171" column="26" lean-forward="false" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1926">
+          <caret line="107" column="12" lean-forward="false" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/cookie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3438">
+          <caret line="191" column="19" lean-forward="false" selection-start-line="191" selection-start-column="4" selection-end-line="191" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9900">
+          <caret line="550" column="4" lean-forward="false" selection-start-line="550" selection-start-column="4" selection-end-line="550" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7110">
+          <caret line="395" column="19" lean-forward="false" selection-start-line="395" selection-start-column="13" selection-end-line="395" selection-end-column="19" />
+          <folding>
+            <marker date="1514996243122" expanded="true" signature="18707:18805" ph="SELECT COUNT... " />
+            <marker date="1514996243122" expanded="true" signature="19155:19395" ph="INSERT INTO ${$db-&gt;name($table)}... " />
+            <marker date="1514996243122" expanded="true" signature="19798:19876" ph="DELETE FROM ${$db-&gt;name($table)}... " />
+            <marker date="1514996243122" expanded="true" signature="20288:20371" ph="DELETE FROM ${$db-&gt;name($table)}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/debugger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/datasources/dbo_source.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3456">
+          <caret line="192" column="43" lean-forward="false" selection-start-line="192" selection-start-column="43" selection-end-line="192" selection-end-column="43" />
+          <folding>
+            <marker date="1514971666401" expanded="false" signature="14599:14624" ph="..." />
+            <marker date="1514971666401" expanded="false" signature="14828:14843" ph="..." />
+            <marker date="1514971666401" expanded="true" signature="40455:40544" ph="..." />
+            <marker date="1514971666401" expanded="true" signature="40587:40638" ph="..." />
+            <marker date="1514971666401" expanded="true" signature="66143:66213" ph="..." />
+            <marker date="1514971666401" expanded="true" signature="68659:68712" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/datasources/dbo/dbo_mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10314">
+          <caret line="573" column="20" lean-forward="false" selection-start-line="573" selection-start-column="20" selection-end-line="573" selection-end-column="20" />
+          <folding>
+            <marker date="1514978831143" expanded="true" signature="7177:7189" ph="ALTER TABLE ${$this-&gt;fullTableName($curTable)}... " />
+            <marker date="1514978831143" expanded="true" signature="8950:8971" ph="DROP TABLE I... " />
+            <marker date="1514978831143" expanded="true" signature="10477:10517" ph="INSERT INTO $... " />
+            <marker date="1514978831143" expanded="true" signature="10477:10526" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="293" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="400" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/request_handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="244" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/cookie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="347" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/request_handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="244" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/request_handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="244" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/multibyte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="230" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="293" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/datasources/dbo_source.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3456">
+          <caret line="192" column="43" lean-forward="false" selection-start-line="192" selection-start-column="43" selection-end-line="192" selection-end-column="43" />
+          <folding>
+            <marker date="1514971666401" expanded="false" signature="14599:14624" ph="..." />
+            <marker date="1514971666401" expanded="false" signature="14828:14843" ph="..." />
+            <marker date="1514971666401" expanded="true" signature="40455:40544" ph="..." />
+            <marker date="1514971666401" expanded="true" signature="40587:40638" ph="..." />
+            <marker date="1514971666401" expanded="true" signature="66143:66213" ph="..." />
+            <marker date="1514971666401" expanded="true" signature="68659:68712" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/debugger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="98" column="40" lean-forward="false" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/string_class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="38" column="3" lean-forward="false" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/inflector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="505" column="25" lean-forward="false" selection-start-line="505" selection-start-column="25" selection-end-line="505" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/basics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="152" column="41" lean-forward="false" selection-start-line="152" selection-start-column="41" selection-end-line="152" selection-end-column="41" />
+          <folding>
+            <marker date="1514971608710" expanded="true" signature="3321:3401" ph="..." />
+            <marker date="1514971608710" expanded="true" signature="7493:7824" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="443" column="38" lean-forward="false" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/set.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/behaviors/tree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="104" column="50" lean-forward="false" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/datasources/dbo/dbo_mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="139" column="37" lean-forward="false" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/datasources/datasource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="238" column="13" lean-forward="false" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/datasources/dbo/dbo_mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="93" column="22" lean-forward="false" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+          <folding>
+            <marker date="1514978831143" expanded="true" signature="7177:7189" ph="ALTER TABLE ${$this-&gt;fullTableName($curTable)}... " />
+            <marker date="1514978831143" expanded="true" signature="8950:8971" ph="DROP TABLE I... " />
+            <marker date="1514978831143" expanded="true" signature="10477:10517" ph="INSERT INTO $... " />
+            <marker date="1514978831143" expanded="true" signature="10477:10526" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="451" column="2" lean-forward="false" selection-start-line="451" selection-start-column="2" selection-end-line="451" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/model/behavior.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7200">
+          <caret line="400" column="32" lean-forward="false" selection-start-line="400" selection-start-column="32" selection-end-line="400" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7110">
+          <caret line="395" column="19" lean-forward="false" selection-start-line="395" selection-start-column="13" selection-end-line="395" selection-end-column="19" />
+          <folding>
+            <marker date="1514996243122" expanded="true" signature="18707:18805" ph="SELECT COUNT... " />
+            <marker date="1514996243122" expanded="true" signature="19155:19395" ph="INSERT INTO ${$db-&gt;name($table)}... " />
+            <marker date="1514996243122" expanded="true" signature="19798:19876" ph="DELETE FROM ${$db-&gt;name($table)}... " />
+            <marker date="1514996243122" expanded="true" signature="20288:20371" ph="DELETE FROM ${$db-&gt;name($table)}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/helpers/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3150">
+          <caret line="175" column="32" lean-forward="false" selection-start-line="175" selection-start-column="32" selection-end-line="175" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/helpers/app_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/helpers/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19386">
+          <caret line="1077" column="45" lean-forward="false" selection-start-line="1077" selection-start-column="45" selection-end-line="1077" selection-end-column="45" />
+          <folding>
+            <marker date="1465821045438" expanded="true" signature="9898:9911" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/cookie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3438">
+          <caret line="191" column="19" lean-forward="false" selection-start-line="191" selection-start-column="4" selection-end-line="191" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/controller/components/security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1926">
+          <caret line="107" column="12" lean-forward="false" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/helpers/javascript.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12258">
+          <caret line="681" column="0" lean-forward="false" selection-start-line="681" selection-start-column="0" selection-end-line="681" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="160" column="5" lean-forward="false" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/cake_object.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="3" lean-forward="false" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/console/cake.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="339" column="0" lean-forward="false" selection-start-line="339" selection-start-column="0" selection-end-line="339" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/configure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="1119" column="0" lean-forward="false" selection-start-line="1119" selection-start-column="0" selection-end-line="1119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/helpers/html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="281" column="27" lean-forward="false" selection-start-line="281" selection-start-column="27" selection-end-line="281" selection-end-column="27" />
+          <folding>
+            <marker date="1514997959557" expanded="true" signature="1999:2005" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="176" column="26" lean-forward="false" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="739" column="9" lean-forward="false" selection-start-line="739" selection-start-column="9" selection-end-line="739" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -27,8 +27,8 @@
  * Included libraries.
  *
  */
-if (!class_exists('Object')) {
-	uses('object');
+if (!class_exists('CakeObject')) {
+	uses('cake_object');
 }
 if (!class_exists('Set')) {
 	require LIBS . 'set.php';
@@ -44,7 +44,7 @@ if (!class_exists('Set')) {
  * @subpackage    cake.cake.libs
  * @link          http://book.cakephp.org/view/491/Inflector
  */
-class Inflector extends Object {
+class Inflector extends CakeObject {
 /**
  * Pluralized words.
  *
@@ -127,7 +127,7 @@ class Inflector extends Object {
 		static $instance = array();
 
 		if (!$instance) {
-			$instance[0] =& new Inflector();
+			$instance[0] = new Inflector();
 			if (file_exists(CONFIGS.'inflections.php')) {
 				include(CONFIGS.'inflections.php');
 				$instance[0]->__pluralRules = $pluralRules;
@@ -494,8 +494,8 @@ class Inflector extends Object {
  * @link http://book.cakephp.org/view/572/Class-methods
  */
 	function slug($string, $replacement = '_') {
-		if (!class_exists('String')) {
-			require LIBS . 'string.php';
+		if (!class_exists('StringClass')) {
+			require LIBS . 'string_class.php';
 		}
 		$map = array(
 			'/à|á|å|â/' => 'a',

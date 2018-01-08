@@ -62,7 +62,7 @@ class SessionTest extends CakeTestCase {
  * @return void
  */
 	function setUp() {
-		$this->Session =& new CakeSession();
+		$this->Session = new CakeSession();
 		$this->Session->start();
 		$this->Session->_checkValid();
 	}

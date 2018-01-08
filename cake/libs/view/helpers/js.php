@@ -135,7 +135,7 @@ class JsHelper extends Overloadable2 {
 		}
 
 		$func .= "'" . Router::url($url) . "'";
-		$ajax =& new AjaxHelper();
+		$ajax = new AjaxHelper();
 		$func .= ", " . $ajax->__optionsForAjax($options) . ")";
 
 		if (isset($options['before'])) {

@@ -33,7 +33,7 @@
  * @package       cake
  * @subpackage    cake.cake.libs
  */
-class Object {
+class CakeObject {
 /**
  * Log object
  *
@@ -49,7 +49,7 @@ class Object {
  *
  * @return Object
  */
-	function Object() {
+	function CakeObject() {
 		$args = func_get_args();
 		if (method_exists($this, '__destruct')) {
 			register_shutdown_function (array(&$this, '__destruct'));

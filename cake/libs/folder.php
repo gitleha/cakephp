@@ -25,8 +25,8 @@
  * Included libraries.
  *
  */
-if (!class_exists('Object')) {
-	uses('object');
+if (!class_exists('CakeObject')) {
+	uses('cake_object');
 }
 /**
  * Folder structure browser, lists folders and files.
@@ -36,7 +36,7 @@ if (!class_exists('Object')) {
  * @package       cake
  * @subpackage    cake.cake.libs
  */
-class Folder extends Object {
+class Folder extends CakeObject {
 /**
  * Path to Folder.
  *

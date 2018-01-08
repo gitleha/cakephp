@@ -27,8 +27,8 @@
  * Included libraries.
  *
  */
-if (!class_exists('Object')) {
-	uses('object');
+if (!class_exists('CakeObject')) {
+	uses('cake_object');
 }
 /**
  * Text-to-HTML parser.
@@ -38,7 +38,7 @@ if (!class_exists('Object')) {
  * @package       cake
  * @subpackage    cake.cake.libs
  */
-class Flay extends Object{
+class Flay extends CakeObject{
 /**
  * Text to be parsed.
  *

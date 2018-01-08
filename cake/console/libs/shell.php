@@ -29,7 +29,7 @@
  * @package       cake
  * @subpackage    cake.cake.console.libs
  */
-class Shell extends Object {
+class Shell extends CakeObject {
 /**
  * An instance of the ShellDispatcher object that loaded this script
  *
@@ -199,7 +199,7 @@ class Shell extends Object {
  */
 	function _loadDbConfig() {
 		if (config('database') && class_exists('DATABASE_CONFIG')) {
-			$this->DbConfig =& new DATABASE_CONFIG();
+			$this->DbConfig = new DATABASE_CONFIG();
 			return true;
 		}
 		$this->err('Database config could not be loaded');
@@ -221,7 +221,7 @@ class Shell extends Object {
 		}
 
 		if ($this->uses === true && App::import('Model', 'AppModel')) {
-			$this->AppModel =& new AppModel(false, false, false);
+			$this->AppModel = new AppModel(false, false, false);
 			return true;
 		}
 
@@ -289,7 +289,7 @@ class Shell extends Object {
 			} else {
 				$this->taskNames[] = $taskName;
 				if (!PHP5) {
-					$this->{$taskName} =& new $taskClass($this->Dispatch);
+					$this->{$taskName} = new $taskClass($this->Dispatch);
 				} else {
 					$this->{$taskName} = new $taskClass($this->Dispatch);
 				}

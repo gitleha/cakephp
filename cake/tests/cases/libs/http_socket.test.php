@@ -57,8 +57,8 @@ class HttpSocketTest extends CakeTestCase {
 			Mock::generatePartial('HttpSocket', 'TestHttpSocketRequests', array('read', 'write', 'connect', 'request'));
 		}
 
-		$this->Socket =& new TestHttpSocket();
-		$this->RequestSocket =& new TestHttpSocketRequests();
+		$this->Socket = new TestHttpSocket();
+		$this->RequestSocket = new TestHttpSocketRequests();
 	}
 /**
  * We use this function to clean up after the test case was executed

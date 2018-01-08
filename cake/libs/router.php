@@ -36,7 +36,7 @@ if (!class_exists('Object')) {
  * @package       cake
  * @subpackage    cake.cake.libs
  */
-class Router extends Object {
+class Router extends CakeObject {
 /**
  * Array of routes
  *
@@ -169,7 +169,7 @@ class Router extends Object {
 		static $instance = array();
 
 		if (!$instance) {
-			$instance[0] =& new Router();
+			$instance[0] = new Router();
 			$instance[0]->__admin = Configure::read('Routing.admin');
 		}
 		return $instance[0];
@@ -744,7 +744,7 @@ class Router extends Object {
  * @access public
  * @static
  */
-	function url($url = null, $full = false) {
+	public static function url($url = null, $full = false) {
 		$_this =& Router::getInstance();
 		$defaults = $params = array('plugin' => null, 'controller' => null, 'action' => 'index');
 

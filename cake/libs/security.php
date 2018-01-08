@@ -31,7 +31,7 @@
  * @package       cake
  * @subpackage    cake.cake.libs
  */
-class Security extends Object {
+class Security extends CakeObject {
 /**
  * Default hash method
  *
@@ -49,7 +49,7 @@ class Security extends Object {
 	function &getInstance() {
 		static $instance = array();
 		if (!$instance) {
-			$instance[0] =& new Security;
+			$instance[0] = new Security;
 		}
 		return $instance[0];
 	}
@@ -83,8 +83,8 @@ class Security extends Object {
   * @static
   */
 	function generateAuthKey() {
-		if (!class_exists('String')) {
-			App::import('Core', 'String');
+		if (!class_exists('StringClass')) {
+			App::import('Core', 'StringClass');
 		}
 		return Security::hash(String::uuid());
 	}
@@ -177,7 +177,7 @@ class Security extends Object {
 		$_this =& Security::getInstance();
 		if (!defined('CIPHER_SEED')) {
 			//This is temporary will change later
-			define('CIPHER_SEED', '76859309657453542496749683645');
+			define('CIPHER_SEED', 9222372036844775807);
 		}
 		srand(CIPHER_SEED);
 		$out = '';

@@ -165,12 +165,12 @@ class AjaxHelperTest extends CakeTestCase {
  */
 	function setUp() {
 		Router::reload();
-		$this->Ajax =& new TestAjaxHelper();
-		$this->Ajax->Html =& new HtmlHelper();
-		$this->Ajax->Form =& new FormHelper();
-		$this->Ajax->Javascript =& new JavascriptHelper();
+		$this->Ajax = new TestAjaxHelper();
+		$this->Ajax->Html = new HtmlHelper();
+		$this->Ajax->Form = new FormHelper();
+		$this->Ajax->Javascript = new JavascriptHelper();
 		$this->Ajax->Form->Html =& $this->Ajax->Html;
-		$view =& new View(new AjaxTestController());
+		$view = new View(new AjaxTestController());
 		ClassRegistry::addObject('view', $view);
 		ClassRegistry::addObject('PostAjaxTest', new PostAjaxTest());
 	}
@@ -838,7 +838,7 @@ class AjaxHelperTest extends CakeTestCase {
  */
 	function testAfterRender() {
 		$oldXUpdate = env('HTTP_X_UPDATE');
-		$this->Ajax->Javascript =& new TestJavascriptHelper();
+		$this->Ajax->Javascript = new TestJavascriptHelper();
 
 		$_SERVER['HTTP_X_UPDATE'] = 'secondDiv myDiv anotherDiv';
 		$result = $this->Ajax->div('myDiv');

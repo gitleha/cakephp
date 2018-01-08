@@ -21,7 +21,7 @@
  * @lastmodified  $Date$
  * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
  */
-uses('magic_db', 'object');
+uses('magic_db', 'cake_object');
 /**
  * The test class for the MagicDb class
  *
@@ -42,7 +42,7 @@ class MagicDbTest extends UnitTestCase {
  * @access public
  */
 	function setUp() {
-		$this->Db =& new MagicDb();
+		$this->Db = new MagicDb();
 	}
 /**
  * MagicDb::analyze should properly detect the file type and output additional info as requested.
@@ -160,7 +160,7 @@ class MagicDbTest extends UnitTestCase {
  * @package       cake
  * @subpackage    cake.tests.cases.libs
  */
-class MagicDbTestData extends Object {
+class MagicDbTestData extends CakeObject {
 /**
  * Base64 encoded data
  *

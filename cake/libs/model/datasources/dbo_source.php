@@ -23,7 +23,7 @@
  * @lastmodified  $Date$
  * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
  */
-App::import('Core', array('Set', 'String'));
+App::import('Core', array('Set', 'StringClass'));
 
 /**
  * DboSource
@@ -1699,7 +1699,7 @@ class DboSource extends DataSource {
 		if (empty($fields)) {
 			$fields = array_keys($model->schema());
 		} elseif (!is_array($fields)) {
-			$fields = String::tokenize($fields);
+			$fields = StringClass::tokenize($fields);
 		}
 		$fields = array_values(array_filter($fields));
 
@@ -1737,7 +1737,7 @@ class DboSource extends DataSource {
 							if (!Set::numeric($build)) {
 								$fields[$i] = $this->name($build[0] . '.' . $build[1]);
 							}
-							$comma = String::tokenize($fields[$i]);
+							$comma = StringClass::tokenize($fields[$i]);
 							foreach ($comma as $string) {
 								if (preg_match('/^[0-9]+\.[0-9]+$/', $string)) {
 									$value[] = $string;
@@ -1967,7 +1967,7 @@ class DboSource extends DataSource {
 		}
 
 		if ($bound) {
-			return String::insert($key . ' ' . trim($operator), $value);
+			return StringClass::insert($key . ' ' . trim($operator), $value);
 		}
 
 		if (!preg_match($operatorMatch, trim($operator))) {

@@ -59,11 +59,11 @@ class PaginatorHelperTest extends CakeTestCase {
 				)
 			)
 		);
-		$this->Paginator->Html =& new HtmlHelper();
-		$this->Paginator->Ajax =& new AjaxHelper();
-		$this->Paginator->Ajax->Html =& new HtmlHelper();
-		$this->Paginator->Ajax->Javascript =& new JavascriptHelper();
-		$this->Paginator->Ajax->Form =& new FormHelper();
+		$this->Paginator->Html = new HtmlHelper();
+		$this->Paginator->Ajax = new AjaxHelper();
+		$this->Paginator->Ajax->Html = new HtmlHelper();
+		$this->Paginator->Ajax->Javascript = new JavascriptHelper();
+		$this->Paginator->Ajax->Form = new FormHelper();
 
 		Configure::write('Routing.admin', '');
 		Router::reload();

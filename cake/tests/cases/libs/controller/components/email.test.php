@@ -219,7 +219,7 @@ class EmailComponentTest extends CakeTestCase {
 		$this->_appEncoding = Configure::read('App.encoding');
 		Configure::write('App.encoding', 'UTF-8');
 
-		$this->Controller =& new EmailTestController();
+		$this->Controller = new EmailTestController();
 
 		restore_error_handler();
 		@$this->Controller->Component->init($this->Controller);
@@ -542,7 +542,7 @@ HTMLBLOC;
 		$this->skipIf(!@fsockopen('localhost', 25), '%s No SMTP server running on localhost');
 
 		$this->Controller->EmailTest->reset();
-		$socket =& new CakeSocket(array_merge(array('protocol'=>'smtp'), $this->Controller->EmailTest->smtpOptions));
+		$socket = new CakeSocket(array_merge(array('protocol'=>'smtp'), $this->Controller->EmailTest->smtpOptions));
 		$this->Controller->EmailTest->setConnectionSocket($socket);
 
 		$this->assertTrue($this->Controller->EmailTest->getConnectionSocket());

@@ -29,7 +29,7 @@
  * @package       cake
  * @subpackage    cake.cake.libs
  */
-class Set extends Object {
+class Set extends CakeObject {
 /**
  * Deprecated
  *
@@ -74,7 +74,7 @@ class Set extends Object {
  * @access public
  * @static
  */
-	function filter($var, $isArray = false) {
+	public static function filter($var, $isArray = false) {
 		if (is_array($var) && (!empty($var) || $isArray)) {
 			return array_filter($var, array('Set', 'filter'));
 		}
@@ -608,10 +608,10 @@ class Set extends Object {
 		}
 
 		if (!is_array($path)) {
-			if (!class_exists('String')) {
-				App::import('Core', 'String');
+			if (!class_exists('StringClass')) {
+				App::import('Core', 'StringClass');
 			}
-			$path = String::tokenize($path, '.', '{', '}');
+			$path = StringClass::tokenize($path, '.', '{', '}');
 		}
 		$tmp = array();
 

@@ -38,7 +38,7 @@ class XmlTest extends CakeTestCase {
  * @return void
  */
 	function setUp() {
-		$manager =& new XmlManager();
+		$manager = new XmlManager();
 		$manager->namespaces = array();
 	}
 /**
@@ -110,7 +110,7 @@ class XmlTest extends CakeTestCase {
 				array('Status' => array('id' => 2))
 			)
 		);
-		$result =& new Xml($data, array('format' => 'tags'));
+		$result = new Xml($data, array('format' => 'tags'));
 		$expected = '<statuses><status><id>1</id></status><status><id>2</id></status></statuses>';
 		$this->assertIdentical($result->toString(), $expected);
 	}
@@ -121,27 +121,27 @@ class XmlTest extends CakeTestCase {
  * @return void
  **/
 	function testSerializationOfBooleanAndBooleanishValues() {
-		$xml =& new Xml(array('data' => array('example' => false)));
+		$xml = new Xml(array('data' => array('example' => false)));
 		$result = $xml->toString(false);
 		$expected = '<data example="0" />';
 		$this->assertEqual($result, $expected, 'Boolean values incorrectly handled. %s');
 
-		$xml =& new Xml(array('data' => array('example' => true)));
+		$xml = new Xml(array('data' => array('example' => true)));
 		$result = $xml->toString(false);
 		$expected = '<data example="1" />';
 		$this->assertEqual($result, $expected, 'Boolean values incorrectly handled. %s');
 
-		$xml =& new Xml(array('data' => array('example' => null)));
+		$xml = new Xml(array('data' => array('example' => null)));
 		$result = $xml->toString(false);
 		$expected = '<data example="" />';
 		$this->assertEqual($result, $expected, 'Boolean values incorrectly handled. %s');
 
-		$xml =& new Xml(array('data' => array('example' => 0)));
+		$xml = new Xml(array('data' => array('example' => 0)));
 		$result = $xml->toString(false);
 		$expected = '<data example="0" />';
 		$this->assertEqual($result, $expected, 'Boolean-ish values incorrectly handled. %s');
 
-		$xml =& new Xml(array('data' => array('example' => 1)));
+		$xml = new Xml(array('data' => array('example' => 1)));
 		$result = $xml->toString(false);
 		$expected = '<data example="1" />';
 		$this->assertEqual($result, $expected, 'Boolean-ish values incorrectly handled. %s');
@@ -361,7 +361,7 @@ class XmlTest extends CakeTestCase {
  * @return void
  */
 	function testCloneNode() {
-		$node =& new XmlNode('element', 'myValue');
+		$node = new XmlNode('element', 'myValue');
 		$twin =& $node->cloneNode();
 		$this->assertEqual($node, $twin);
 	}
@@ -386,7 +386,7 @@ class XmlTest extends CakeTestCase {
 				'Industry' => array('id' => 2, 'name' => 'Education'),
 			)
 		);
-		$xml =& new Xml($input, array('format' => 'tags'));
+		$xml = new Xml($input, array('format' => 'tags'));
 		$node =& $xml->children[0]->children[0];
 
 		$nextSibling =& $node->nextSibling();
@@ -419,7 +419,7 @@ class XmlTest extends CakeTestCase {
 				'Industry' => array('id' => 2, 'name' => 'Education'),
 			)
 		);
-		$xml =& new Xml($input, array('format' => 'tags'));
+		$xml = new Xml($input, array('format' => 'tags'));
 		$node =& $xml->children[0]->children[1];
 
 		$prevSibling =& $node->previousSibling();
@@ -434,7 +434,7 @@ class XmlTest extends CakeTestCase {
  * @return void
  */
 	function testAddAndRemoveAttributes() {
-		$node =& new XmlElement('myElement', 'superValue');
+		$node = new XmlElement('myElement', 'superValue');
 		$this->assertTrue(empty($node->attributes));
 
 		$attrs = array(
@@ -445,12 +445,12 @@ class XmlTest extends CakeTestCase {
 		$node->addAttribute($attrs);
 		$this->assertEqual($node->attributes, $attrs);
 
-		$node =& new XmlElement('myElement', 'superValue');
+		$node = new XmlElement('myElement', 'superValue');
 		$node->addAttribute('test', 'value');
 		$this->assertTrue(isset($node->attributes['test']));
 
-		$node =& new XmlElement('myElement', 'superValue');
-		$obj =& new StdClass();
+		$node = new XmlElement('myElement', 'superValue');
+		$obj = new StdClass();
 		$obj->class = 'info';
 		$obj->id = 'primaryInfoBox';
 		$node->addAttribute($obj);
@@ -819,7 +819,7 @@ class XmlTest extends CakeTestCase {
 				<name>varchar(45)</name>
 			</User>
 		</method>';
-		$xml =& new XML($filledValue);
+		$xml = new XML($filledValue);
 		$expected = array(
 			'Method' => array(
 				'name' => 'set_user_settings',
@@ -843,7 +843,7 @@ class XmlTest extends CakeTestCase {
 			</User>
 		</method>';
 
-		$xml =& new XML($emptyValue);
+		$xml = new XML($emptyValue);
 		$expected = array(
 			'Method' => array(
 				'name' => 'set_user_settings',
@@ -1383,7 +1383,7 @@ class XmlTest extends CakeTestCase {
 		$data = '<?xml version="1.0" encoding="UTF-8"?><content>TEST</content>';
 		$start = memory_get_usage();
 		for ($i = 0; $i <= 300; $i++) {
-			$test =& new XML($data);
+			$test = new XML($data);
 			$test->__destruct();
 			unset($test);
 		}

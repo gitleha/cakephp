@@ -37,7 +37,7 @@ App::import('Core', array('Component', 'View'));
  * @link          http://book.cakephp.org/view/49/Controllers
  *
  */
-class Controller extends Object {
+class Controller extends CakeObject {
 /**
  * The name of this controller. Controller names are plural, named after the model they manipulate.
  *
@@ -337,7 +337,7 @@ class Controller extends Object {
 		}
 		$this->modelClass = Inflector::classify($this->name);
 		$this->modelKey = Inflector::underscore($this->modelClass);
-		$this->Component =& new Component();
+		$this->Component = new Component();
 
 		$childMethods = get_class_methods($this);
 		$parentMethods = get_class_methods('Controller');
@@ -781,7 +781,7 @@ class Controller extends Object {
 			$this->set('cakeDebug', $this);
 		}
 
-		$View =& new $viewClass($this);
+		$View = new $viewClass($this);
 
 		if (!empty($this->modelNames)) {
 			$models = array();

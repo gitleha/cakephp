@@ -163,7 +163,7 @@ class TestView extends View {
  * @return void
  */
 	function cakeError($method, $messages) {
-		$error =& new ViewTestErrorHandler($method, $messages);
+		$error = new ViewTestErrorHandler($method, $messages);
 		return $error;
 	}
 }
@@ -540,7 +540,7 @@ class ViewTest extends CakeTestCase {
  **/
 	function testHelperCallbackTriggering() {
 		$this->PostsController->helpers = array('Html', 'CallbackMock');
-		$View =& new TestView($this->PostsController);
+		$View = new TestView($this->PostsController);
 		$loaded = array();
 		$View->loaded = $View->loadHelpers($loaded, $this->PostsController->helpers);
 		$View->loaded['CallbackMock']->expectOnce('beforeRender');
@@ -557,7 +557,7 @@ class ViewTest extends CakeTestCase {
  */
 	function testBeforeLayout() {
 		$this->PostsController->helpers = array('TestAfter', 'Html');
-		$View =& new View($this->PostsController);
+		$View = new View($this->PostsController);
 		$out = $View->render('index');
 		$this->assertEqual($View->loaded['testAfter']->property, 'Valuation');
 	}
@@ -571,7 +571,7 @@ class ViewTest extends CakeTestCase {
 		$this->PostsController->helpers = array('TestAfter', 'Html');
 		$this->PostsController->set('variable', 'values');
 
-		$View =& new View($this->PostsController);
+		$View = new View($this->PostsController);
 		ClassRegistry::addObject('afterView', $View);
 
 		$content = 'This is my view output';
@@ -713,7 +713,7 @@ class ViewTest extends CakeTestCase {
  */
 	function testRenderStrippingNoCacheTagsOnlyCacheHelper() {
 		Configure::write('Cache.check', false);
-		$View =& new View($this->PostsController);
+		$View = new View($this->PostsController);
 		$View->set(array('superman' => 'clark', 'variable' => 'var'));
 		$View->helpers = array('Html', 'Form', 'Cache');
 		$View->layout = 'cache_layout';
@@ -728,7 +728,7 @@ class ViewTest extends CakeTestCase {
  */
 	function testRenderStrippingNoCacheTagsOnlyCacheCheck() {
 		Configure::write('Cache.check', true);
-		$View =& new View($this->PostsController);
+		$View = new View($this->PostsController);
 		$View->set(array('superman' => 'clark', 'variable' => 'var'));
 		$View->helpers = array('Html', 'Form');
 		$View->layout = 'cache_layout';

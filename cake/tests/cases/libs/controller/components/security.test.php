@@ -136,7 +136,7 @@ class SecurityComponentTest extends CakeTestCase {
  * @return void
  */
 	function setUp() {
-		$this->Controller =& new SecurityTestController();
+		$this->Controller = new SecurityTestController();
 		$this->Controller->Component->init($this->Controller);
 		$this->Controller->Security =& $this->Controller->TestSecurity;
 		$this->Controller->Security->blackHoleCallback = 'fail';
@@ -979,7 +979,7 @@ DIGEST;
 		$data = array(
 			'username' => 'Willy Smith',
 			'password' => 'password',
-			'nonce' => String::uuid(),
+			'nonce' => StringClass::uuid(),
 			'nc' => 1,
 			'cnonce' => 1,
 			'realm' => $realm,

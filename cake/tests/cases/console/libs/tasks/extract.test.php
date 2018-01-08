@@ -58,8 +58,8 @@ class ExtractTaskTest extends CakeTestCase {
  * @access public
  */
 	function setUp() {
-		$this->Dispatcher =& new TestExtractTaskMockShellDispatcher();
-		$this->Task =& new ExtractTask($this->Dispatcher);
+		$this->Dispatcher = new TestExtractTaskMockShellDispatcher();
+		$this->Task = new ExtractTask($this->Dispatcher);
 	}
 /**
  * tearDown method

@@ -209,8 +209,8 @@ class AclBehaviorTestCase extends CakeTestCase {
 	function startTest() {
 		Configure::write('Acl.database', 'test_suite');
 
-		$this->Aco =& new Aco();
-		$this->Aro =& new Aro();
+		$this->Aco = new Aco();
+		$this->Aro = new Aro();
 	}
 /**
  * tearDown method
@@ -229,12 +229,12 @@ class AclBehaviorTestCase extends CakeTestCase {
  * @access public
  */
 	function testSetup() {
-		$User =& new AclUser();
+		$User = new AclUser();
 		$this->assertTrue(isset($User->Behaviors->Acl->settings['User']));
 		$this->assertEqual($User->Behaviors->Acl->settings['User']['type'], 'requester');
 		$this->assertTrue(is_object($User->Aro));
 
-		$Post =& new AclPost();
+		$Post = new AclPost();
 		$this->assertTrue(isset($Post->Behaviors->Acl->settings['Post']));
 		$this->assertEqual($Post->Behaviors->Acl->settings['Post']['type'], 'controlled');
 		$this->assertTrue(is_object($Post->Aco));
@@ -246,7 +246,7 @@ class AclBehaviorTestCase extends CakeTestCase {
  * @access public
  */
 	function testAfterSave() {
-		$Post =& new AclPost();
+		$Post = new AclPost();
 		$data = array(
 			'Post' => array(
 				'author_id' => 1,
@@ -270,7 +270,7 @@ class AclBehaviorTestCase extends CakeTestCase {
 		);
 		$this->Aro->save($aroData);
 
-		$Person =& new AclPerson();
+		$Person = new AclPerson();
 		$data = array(
 			'AclPerson' => array(
 				'name' => 'Trent',
@@ -303,7 +303,7 @@ class AclBehaviorTestCase extends CakeTestCase {
 			)
 		);
 		$this->Aro->save($aroData);
-		$Person =& new AclPerson();
+		$Person = new AclPerson();
 		$data = array(
 			'AclPerson' => array(
 				'name' => 'Trent',
@@ -348,7 +348,7 @@ class AclBehaviorTestCase extends CakeTestCase {
  * @access public
  */
 	function testNode() {
-		$Person =& new AclPerson();
+		$Person = new AclPerson();
 		$aroData = array(
 			'Aro' => array(
 				'model' => 'AclPerson',

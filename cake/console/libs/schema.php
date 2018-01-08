@@ -78,7 +78,7 @@ class SchemaShell extends Shell {
 			$connection = $this->params['connection'];
 		}
 
-		$this->Schema =& new CakeSchema(compact('name', 'path', 'file', 'connection'));
+		$this->Schema = new CakeSchema(compact('name', 'path', 'file', 'connection'));
 	}
 /**
  * Override main
@@ -137,7 +137,7 @@ class SchemaShell extends Shell {
 		$content['file'] = $this->params['file'];
 
 		if ($snapshot === true) {
-			$Folder =& new Folder($this->Schema->path);
+			$Folder = new Folder($this->Schema->path);
 			$result = $Folder->read();
 
 			$numToUse = false;

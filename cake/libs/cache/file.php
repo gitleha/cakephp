@@ -85,7 +85,7 @@ class FileEngine extends CacheEngine {
 			if (!class_exists('File')) {
 				require LIBS . 'file.php';
 			}
-			$this->__File =& new File($this->settings['path'] . DS . 'cake');
+			$this->__File = new File($this->settings['path'] . DS . 'cake');
 		}
 
 		if (DIRECTORY_SEPARATOR === '\\') {

@@ -515,7 +515,7 @@ class CakeSchemaTest extends CakeTestCase {
 		$db =& ConnectionManager::getDataSource('test_suite');
 		$db->cacheSources = false;
 
-		$Schema =& new CakeSchema(array(
+		$Schema = new CakeSchema(array(
 			'connection' => 'test_suite',
 			'testdescribes' => array(
 				'id' => array('type' => 'integer', 'key' => 'primary'),

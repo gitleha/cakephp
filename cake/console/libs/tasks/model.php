@@ -339,7 +339,7 @@ class ModelTask extends Shell {
 		foreach ($this->__tables as $otherTable) {
 			App::import('Model');
 			$tmpModelName = $this->_modelName($otherTable);
-			$tempOtherModel = & new Model(array('name' => $tmpModelName, 'table' => $otherTable, 'ds' => $model->useDbConfig));
+			$tempOtherModel = new Model(array('name' => $tmpModelName, 'table' => $otherTable, 'ds' => $model->useDbConfig));
 			$modelFieldsTemp = $tempOtherModel->schema();
 
 			$offset = strpos($otherTable, $model->table . '_');

@@ -77,7 +77,7 @@ class MemcacheEngine extends CacheEngine {
 		}
 		if (!isset($this->__Memcache)) {
 			$return = false;
-			$this->__Memcache =& new Memcache();
+			$this->__Memcache = new Memcache();
 			foreach ($this->settings['servers'] as $server) {
 				$parts = explode(':', $server);
 				$host = $parts[0];

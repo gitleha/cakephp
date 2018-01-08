@@ -71,7 +71,7 @@ if (!class_exists('AppController')) {
  * @package       cake
  * @subpackage    cake.tests.cases.libs.controller
  */
-class ParamTestComponent extends Object {
+class ParamTestComponent extends CakeObject {
 /**
  * name property
  *
@@ -132,7 +132,7 @@ class ComponentTestController extends AppController {
  * @package       cake
  * @subpackage    cake.tests.cases.libs.controller
  */
-class AppleComponent extends Object {
+class AppleComponent extends CakeObject {
 /**
  * components property
  *
@@ -164,7 +164,7 @@ class AppleComponent extends Object {
  * @package       cake
  * @subpackage    cake.tests.cases.libs.controller
  */
-class OrangeComponent extends Object {
+class OrangeComponent extends CakeObject {
 /**
  * components property
  *
@@ -201,7 +201,7 @@ class OrangeComponent extends Object {
  * @package       cake
  * @subpackage    cake.tests.cases.libs.controller
  */
-class BananaComponent extends Object {
+class BananaComponent extends CakeObject {
 /**
  * testField property
  *
@@ -226,7 +226,7 @@ class BananaComponent extends Object {
  * @package       cake
  * @subpackage    cake.tests.cases.libs.controller
  */
-class MutuallyReferencingOneComponent extends Object {
+class MutuallyReferencingOneComponent extends CakeObject {
 /**
  * components property
  *
@@ -241,7 +241,7 @@ class MutuallyReferencingOneComponent extends Object {
  * @package       cake
  * @subpackage    cake.tests.cases.libs.controller
  */
-class MutuallyReferencingTwoComponent extends Object {
+class MutuallyReferencingTwoComponent extends CakeObject {
 /**
  * components property
  *
@@ -256,7 +256,7 @@ class MutuallyReferencingTwoComponent extends Object {
  * @package       cake
  * @subpackage    cake.tests.cases.libs.controller
  */
-class SomethingWithEmailComponent extends Object {
+class SomethingWithEmailComponent extends CakeObject {
 /**
  * components property
  *
@@ -301,19 +301,19 @@ class ComponentTest extends CakeTestCase {
  * @return void
  */
 	function testLoadComponents() {
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array('RequestHandler');
 
-		$Component =& new Component();
+		$Component = new Component();
 		$Component->init($Controller);
 
 		$this->assertTrue(is_a($Controller->RequestHandler, 'RequestHandlerComponent'));
 
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->plugin = 'test_plugin';
 		$Controller->components = array('RequestHandler', 'TestPluginComponent');
 
-		$Component =& new Component();
+		$Component = new Component();
 		$Component->init($Controller);
 
 		$this->assertTrue(is_a($Controller->RequestHandler, 'RequestHandlerComponent'));
@@ -324,19 +324,19 @@ class ComponentTest extends CakeTestCase {
 		));
 		$this->assertFalse(isset($Controller->TestPluginOtherComponent));
 
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array('Security');
 
-		$Component =& new Component();
+		$Component = new Component();
 		$Component->init($Controller);
 
 		$this->assertTrue(is_a($Controller->Security, 'SecurityComponent'));
 		$this->assertTrue(is_a($Controller->Security->Session, 'SessionComponent'));
 
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array('Security', 'Cookie', 'RequestHandler');
 
-		$Component =& new Component();
+		$Component = new Component();
 		$Component->init($Controller);
 
 		$this->assertTrue(is_a($Controller->Security, 'SecurityComponent'));
@@ -350,7 +350,7 @@ class ComponentTest extends CakeTestCase {
  * @return void
  */
 	function testNestedComponentLoading() {
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array('Apple');
 		$Controller->uses = false;
 		$Controller->constructClasses();
@@ -370,7 +370,7 @@ class ComponentTest extends CakeTestCase {
  * @return void
  */
 	function testComponentStartup() {
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array('Apple');
 		$Controller->uses = false;
 		$Controller->constructClasses();
@@ -391,7 +391,7 @@ class ComponentTest extends CakeTestCase {
  * @return void
  */
 	function testMultipleComponentInitialize() {
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->uses = false;
 		$Controller->components = array('Orange', 'Banana');
 		$Controller->constructClasses();
@@ -411,7 +411,7 @@ class ComponentTest extends CakeTestCase {
 			return;
 		}
 
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array('ParamTest' => array('test' => 'value', 'flag'), 'Apple');
 		$Controller->uses = false;
 		$Controller->constructClasses();
@@ -426,7 +426,7 @@ class ComponentTest extends CakeTestCase {
 		$this->assertEqual($Controller->ParamTest->flag, true);
 
 		//Settings are merged from app controller and current controller.
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array(
 			'ParamTest' => array('test' => 'value'),
 			'Orange' => array('ripeness' => 'perfect')
@@ -448,7 +448,7 @@ class ComponentTest extends CakeTestCase {
 		if ($this->skipIf(defined('APP_CONTROLLER_EXISTS'), '%s Need a non-existent AppController')) {
 			return;
 		}
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array('Orange' => array('setting' => array('itemx')));
 		$Controller->uses = false;
 
@@ -463,7 +463,7 @@ class ComponentTest extends CakeTestCase {
  * @return void
  */
 	function testMutuallyReferencingComponents() {
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array('MutuallyReferencingOne');
 		$Controller->uses = false;
 		$Controller->constructClasses();
@@ -488,7 +488,7 @@ class ComponentTest extends CakeTestCase {
  * @return void
  */
 	function testSomethingReferencingEmailComponent() {
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->components = array('SomethingWithEmail');
 		$Controller->uses = false;
 		$Controller->constructClasses();
@@ -520,7 +520,7 @@ class ComponentTest extends CakeTestCase {
 			return;
 		}
 
-		$Controller =& new ComponentTestController();
+		$Controller = new ComponentTestController();
 		$Controller->uses = false;
 		$Controller->components = array('Session');
 		$Controller->constructClasses();

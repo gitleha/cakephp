@@ -34,7 +34,7 @@
  *
  */
 App::import('Core', 'Multibyte');
-class EmailComponent extends Object{
+class EmailComponent extends CakeObject{
 /**
  * Recipient of the email
  *
@@ -714,7 +714,7 @@ class EmailComponent extends Object{
  * @access protected
  */
 	function _getSocket($config) {
-		$this->__smtpConnection =& new CakeSocket($config);
+		$this->__smtpConnection = new CakeSocket($config);
 	}
 /**
  * Sends out email via SMTP

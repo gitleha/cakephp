@@ -31,7 +31,7 @@
  * @package       cake
  * @subpackage    cake.cake.libs.model
  */
-class ModelBehavior extends Object {
+class ModelBehavior extends CakeObject {
 /**
  * Contains configuration settings for use with individual model objects.  This
  * is used because if multiple models use this Behavior, each will use the same
@@ -148,7 +148,7 @@ class ModelBehavior extends Object {
  * @access public
  * @return mixed
  */
-	function dispatchMethod(&$model, $method, $params = array()) {
+	function dispatchMethodModel(&$model, $method, $params = array()) {
 		if (empty($params)) {
 			return $this->{$method}($model);
 		}
@@ -203,7 +203,7 @@ class ModelBehavior extends Object {
  * @package       cake
  * @subpackage    cake.cake.libs.model
  */
-class BehaviorCollection extends Object {
+class BehaviorCollection extends CakeObject {
 /**
  * Stores a reference to the attached name
  *
@@ -282,7 +282,7 @@ class BehaviorCollection extends Object {
 				if (PHP5) {
 					$this->{$name} = new $class;
 				} else {
-					$this->{$name} =& new $class;
+					$this->{$name} = new $class;
 				}
 				ClassRegistry::addObject($class, $this->{$name});
 				if (!empty($plugin)) {
@@ -398,7 +398,7 @@ class BehaviorCollection extends Object {
  * @return array All methods for all behaviors attached to this object
  * @access public
  */
-	function dispatchMethod(&$model, $method, $params = array(), $strict = false) {
+	function dispatchMethodModel(&$model, $method, $params = array(), $strict = false) {
 		$methods = array_keys($this->__methods);
 		foreach ($methods as $key => $value) {
 			$methods[$key] = strtolower($value);
@@ -428,7 +428,7 @@ class BehaviorCollection extends Object {
 		}
 
 		if (!empty($call)) {
-			return $this->{$call[1]}->dispatchMethod($model, $call[0], $params);
+			return $this->{$call[1]}->dispatchMethodModel($model, $call[0], $params);
 		}
 		return array('unhandled');
 	}
@@ -455,7 +455,7 @@ class BehaviorCollection extends Object {
 			if (in_array($name, $this->_disabled)) {
 				continue;
 			}
-			$result = $this->{$name}->dispatchMethod($model, $callback, $params);
+			$result = $this->{$name}->dispatchMethodModel($model, $callback, $params);
 
 			if ($options['break'] && ($result === $options['breakOn'] || (is_array($options['breakOn']) && in_array($result, $options['breakOn'], true)))) {
 				return $result;

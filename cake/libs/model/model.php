@@ -26,7 +26,7 @@
 /**
  * Included libs
  */
-App::import('Core', array('ClassRegistry', 'Overloadable', 'Validation', 'Behavior', 'ConnectionManager', 'Set', 'String'));
+App::import('Core', array('ClassRegistry', 'Overloadable', 'Validation', 'Behavior', 'ConnectionManager', 'Set', 'StringClass'));
 /**
  * Object-relational mapper.
  *
@@ -456,7 +456,7 @@ class Model extends Overloadable {
  * @access protected
  */
 	function call__($method, $params) {
-		$result = $this->Behaviors->dispatchMethod($this, $method, $params);
+		$result = $this->Behaviors->dispatchMethodModel($this, $method, $params);
 
 		if ($result !== array('unhandled')) {
 			return $result;
@@ -664,6 +664,7 @@ class Model extends Overloadable {
 
 		if (!isset($this->{$assoc}) || $this->{$assoc}->name !== $className) {
 			$model = array('class' => $className, 'alias' => $assoc);
+
 			if (PHP5) {
 				$this->{$assoc} = ClassRegistry::init($model);
 			} else {
@@ -1278,9 +1279,9 @@ class Model extends Overloadable {
 						if (empty($this->data[$this->alias][$this->primaryKey]) && $isUUID) {
 							if (array_key_exists($this->primaryKey, $this->data[$this->alias])) {
 								$j = array_search($this->primaryKey, $fields);
-								$values[$j] = String::uuid();
+								$values[$j] = StringClass::uuid();
 							} else {
-								list($fields[], $values[]) = array($this->primaryKey, String::uuid());
+								list($fields[], $values[]) = array($this->primaryKey, StringClass::uuid());
 							}
 						}
 						break;
@@ -2130,7 +2131,7 @@ class Model extends Overloadable {
 				$list = array("{n}.{$this->alias}.{$this->primaryKey}", "{n}.{$this->alias}.{$this->displayField}", null);
 			} else {
 				if (!is_array($query['fields'])) {
-					$query['fields'] = String::tokenize($query['fields']);
+					$query['fields'] = StringClass::tokenize($query['fields']);
 				}
 
 				if (count($query['fields']) == 1) {
@@ -2513,7 +2514,7 @@ class Model extends Overloadable {
 						} elseif (in_array($rule, $behaviorMethods) || in_array(strtolower($rule), $behaviorMethods)) {
 							$ruleParams[] = $validator;
 							$ruleParams[0] = array($fieldName => $ruleParams[0]);
-							$valid = $this->Behaviors->dispatchMethod($this, $rule, $ruleParams);
+							$valid = $this->Behaviors->dispatchMethodModel($this, $rule, $ruleParams);
 						} elseif (method_exists($Validation, $rule)) {
 							$valid = $Validation->dispatchMethod($rule, $ruleParams);
 						} elseif (!is_array($validator['rule'])) {

@@ -238,7 +238,7 @@ class CakeTestCase extends UnitTestCase {
 				$this->_actionFixtures = array();
 
 				foreach ($models as $model) {
-					$fixture =& new CakeTestFixture($this->db);
+					$fixture = new CakeTestFixture($this->db);
 
 					$fixture->name = $model['model'] . 'Test';
 					$fixture->table = $model['table'];
@@ -334,7 +334,7 @@ class CakeTestCase extends UnitTestCase {
 		$return = $params['return'];
 		$params = array_diff_key($params, array('data' => null, 'method' => null, 'return' => null));
 
-		$dispatcher =& new CakeTestDispatcher();
+		$dispatcher = new CakeTestDispatcher();
 		$dispatcher->testCase($this);
 
 		if ($return != 'result') {
@@ -769,7 +769,7 @@ class CakeTestCase extends UnitTestCase {
 			if (isset($fixtureFile)) {
 				require_once($fixtureFile);
 				$fixtureClass = Inflector::camelize($fixture) . 'Fixture';
-				$this->_fixtures[$this->fixtures[$index]] =& new $fixtureClass($this->db);
+				$this->_fixtures[$this->fixtures[$index]] = new $fixtureClass($this->db);
 				$this->_fixtureClassMap[Inflector::camelize($fixture)] = $this->fixtures[$index];
 			}
 		}

@@ -35,7 +35,7 @@ if (!defined('REQUEST_MOBILE_UA')) {
  * @subpackage    cake.cake.libs.controller.components
  *
  */
-class RequestHandlerComponent extends Object {
+class RequestHandlerComponent extends CakeObject {
 /**
  * The layout that will be switched to for Ajax requests
  *

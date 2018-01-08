@@ -39,7 +39,7 @@ class ModelValidationTest extends BaseModelTest {
  * @return void
  */
 	function testValidationParams() {
-		$TestModel =& new ValidationTest1();
+		$TestModel = new ValidationTest1();
 		$TestModel->validate['title'] = array(
 			'rule' => 'customValidatorWithParams',
 			'required' => true
@@ -130,7 +130,7 @@ class ModelValidationTest extends BaseModelTest {
  * @return void
  */
 	function testInvalidFieldsWithFieldListParams() {
-		$TestModel =& new ValidationTest1();
+		$TestModel = new ValidationTest1();
 		$TestModel->validate = $validate = array(
 			'title' => array(
 				'rule' => 'customValidator',
@@ -176,7 +176,7 @@ class ModelValidationTest extends BaseModelTest {
  * @return void
  */
 	function testInvalidFieldsWhitelist() {
-		$TestModel =& new ValidationTest1();
+		$TestModel = new ValidationTest1();
 		$TestModel->validate = $validate = array(
 			'title' => array(
 				'rule' => 'customValidator',
@@ -201,7 +201,7 @@ class ModelValidationTest extends BaseModelTest {
  * @return void
  */
 	function testValidates() {
-		$TestModel =& new TestValidate();
+		$TestModel = new TestValidate();
 
 		$TestModel->validate = array(
 			'user_id' => 'numeric',
@@ -565,7 +565,7 @@ class ModelValidationTest extends BaseModelTest {
 			)
 		);
 
-		$Something =& new Something();
+		$Something = new Something();
 		$JoinThing =& $Something->JoinThing;
 
 		$JoinThing->validate = array('doomed' => array('rule' => 'notEmpty'));
@@ -617,7 +617,7 @@ class ModelValidationTest extends BaseModelTest {
 				array('something_else_id' => 1, 'doomed' => '')
 			)
 		);
-		$Something =& new Something();
+		$Something = new Something();
 		$JoinThing =& $Something->JoinThing;
 
 		$JoinThing->validate = array('doomed' => array('rule' => 'notEmpty'));

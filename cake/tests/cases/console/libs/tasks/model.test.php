@@ -60,8 +60,8 @@ class ModelTaskTest extends CakeTestCase {
  * @access public
  */
 	function setUp() {
-		$this->Dispatcher =& new TestModelTaskMockShellDispatcher();
-		$this->Task =& new MockModelTask($this->Dispatcher);
+		$this->Dispatcher = new TestModelTaskMockShellDispatcher();
+		$this->Task = new MockModelTask($this->Dispatcher);
 		$this->Task->Dispatch =& $this->Dispatcher;
 	}
 /**
@@ -99,7 +99,7 @@ class ModelTaskTest extends CakeTestCase {
 		$filename = '/my/path/article.php';
 		$this->Task->setReturnValue('_checkUnitTest', 1);
 		$this->Task->expectAt(0, 'createFile', array($filename, new PatternExpectation('/class Article extends AppModel/')));
-		$model =& new Model(array('name' => 'Article', 'table' => 'articles', 'ds' => 'test_suite'));
+		$model = new Model(array('name' => 'Article', 'table' => 'articles', 'ds' => 'test_suite'));
 		$this->Task->bake($model);
 
 		$this->assertEqual(count(ClassRegistry::keys()), 0);

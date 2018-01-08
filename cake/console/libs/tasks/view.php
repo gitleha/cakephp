@@ -246,7 +246,7 @@ class ViewTask extends Shell {
 			$this->_stop();
 		}
 		$controllerClassName = $this->controllerName . 'Controller';
-		$controllerObj = & new $controllerClassName();
+		$controllerObj = new $controllerClassName();
 		$controllerObj->constructClasses();
 		$modelClass = $controllerObj->modelClass;
 		$modelObj =& ClassRegistry::getObject($controllerObj->modelKey);
@@ -289,7 +289,7 @@ class ViewTask extends Shell {
 			$content = $this->getContent();
 		}
 		$filename = $this->path . $this->controllerPath . DS . Inflector::underscore($action) . '.ctp';
-		$Folder =& new Folder($this->path . $this->controllerPath, true);
+		$Folder = new Folder($this->path . $this->controllerPath, true);
 		$errors = $Folder->errors();
 		if (empty($errors)) {
 			$path = $Folder->slashTerm($Folder->pwd());

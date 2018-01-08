@@ -122,7 +122,7 @@ class TestThemeView extends ThemeView {
  * @return void
  */
 	function cakeError($method, $messages) {
-		$error =& new ThemeViewTestErrorHandler($method, $messages);
+		$error = new ThemeViewTestErrorHandler($method, $messages);
 		return $error;
 	}
 }
@@ -141,11 +141,11 @@ class ThemeViewTest extends CakeTestCase {
  */
 	function setUp() {
 		Router::reload();
-		$this->Controller =& new Controller();
-		$this->PostsController =& new ThemePostsController();
+		$this->Controller = new Controller();
+		$this->PostsController = new ThemePostsController();
 		$this->PostsController->viewPath = 'posts';
 		$this->PostsController->index();
-		$this->ThemeView =& new ThemeView($this->PostsController);
+		$this->ThemeView = new ThemeView($this->PostsController);
 	}
 /**
  * tearDown method
@@ -167,7 +167,7 @@ class ThemeViewTest extends CakeTestCase {
 	function testConstructionNoRegister() {
 		ClassRegistry::flush();
 		$controller = null;
-		$Theme =& new ThemeView($controller, false);
+		$Theme = new ThemeView($controller, false);
 		$ThemeTwo =& ClassRegistry::getObject('view');
 		$this->assertFalse($ThemeTwo);
 	}

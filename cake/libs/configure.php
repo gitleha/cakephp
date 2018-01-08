@@ -30,7 +30,7 @@
  * @subpackage    cake.cake.libs
  * @link          http://book.cakephp.org/view/42/The-Configuration-Class
  */
-class Configure extends Object {
+class Configure extends CakeObject {
 /**
  * List of additional path(s) where model files reside.
  *
@@ -125,7 +125,7 @@ class Configure extends Object {
 	function &getInstance($boot = true) {
 		static $instance = array();
 		if (!$instance) {
-			$instance[0] =& new Configure();
+			$instance[0] = new Configure();
 			$instance[0]->__loadBootstrap($boot);
 		}
 		return $instance[0];
@@ -215,7 +215,7 @@ class Configure extends Object {
 			require LIBS . 'folder.php';
 		}
 		$items = array();
-		$Folder =& new Folder($path);
+		$Folder = new Folder($path);
 		$contents = $Folder->read(false, true);
 
 		if (is_array($contents)) {
@@ -711,7 +711,7 @@ class Configure extends Object {
  * @package       cake
  * @subpackage    cake.cake.libs
  */
-class App extends Object {
+class App extends CakeObject {
 /**
  * Paths to search for files.
  *
@@ -890,7 +890,7 @@ class App extends Object {
 	function &getInstance() {
 		static $instance = array();
 		if (!$instance) {
-			$instance[0] =& new App();
+			$instance[0] = new App();
 			$instance[0]->__map = Cache::read('file_map', '_cake_core_');
 		}
 		return $instance[0];
@@ -930,7 +930,7 @@ class App extends Object {
 				if (!class_exists('Folder')) {
 					require LIBS . 'folder.php';
 				}
-				$Folder =& new Folder();
+				$Folder = new Folder();
 				$directories = $Folder->tree($path, false, 'dir');
 				$this->__paths[$path] = $directories;
 			}
@@ -1119,10 +1119,14 @@ class App extends Object {
 			$paths = array();
 
 			foreach ($path as $key => $value) {
-				$count = count($key);
-				for ($i = 0; $i < $count; $i++) {
-					$paths[] = $path[$key][$i];
-				}
+			    if (is_string($key)) {
+                    $paths[] = $path[$key][0];
+                } else {
+                    $count = count($key);
+                    for ($i = 0; $i < $count; $i++) {
+                        $paths[] = $path[$key][$i];
+                    }
+                }
 			}
 			return $paths;
 		}

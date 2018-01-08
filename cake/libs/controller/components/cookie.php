@@ -36,7 +36,7 @@ App::import('Core', 'Security');
  * @subpackage    cake.cake.libs.controller.components
  *
  */
-class CookieComponent extends Object {
+class CookieComponent extends CakeObject {
 /**
  * The name of the cookie.
  *

@@ -164,10 +164,10 @@ class DbAclTwoTest extends DbAcl {
  * @return void
  */
 	function __construct() {
-		$this->Aro =& new AroTwoTest();
-		$this->Aro->Permission =& new PermissionTwoTest();
-		$this->Aco =& new AcoTwoTest();
-		$this->Aro->Permission =& new PermissionTwoTest();
+		$this->Aro = new AroTwoTest();
+		$this->Aro->Permission = new PermissionTwoTest();
+		$this->Aco = new AcoTwoTest();
+		$this->Aro->Permission = new PermissionTwoTest();
 	}
 }
 /**
@@ -199,7 +199,7 @@ class AclComponentTest extends CakeTestCase {
  * @return void
  */
 	function startTest() {
-		$this->Acl =& new AclComponent();
+		$this->Acl = new AclComponent();
 	}
 /**
  * before method

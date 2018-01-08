@@ -40,8 +40,8 @@ class TestManagerTest extends CakeTestCase {
  * @access public
  */
 	function setUp() {
-		$this->Sut =& new TestManager();
-		$this->Reporter =& new CakeHtmlReporter();
+		$this->Sut = new TestManager();
+		$this->Reporter = new CakeHtmlReporter();
 	}
 /**
  * testRunAllTests method
@@ -50,11 +50,11 @@ class TestManagerTest extends CakeTestCase {
  * @access public
  */
 	function testRunAllTests() {
-		$folder =& new Folder($this->Sut->_getTestsPath());
+		$folder = new Folder($this->Sut->_getTestsPath());
 		$extension = str_replace('.', '\.', TestManager::getExtension('test'));
 		$out = $folder->findRecursive('.*' . $extension);
 
-		$reporter =& new CakeHtmlReporter();
+		$reporter = new CakeHtmlReporter();
 		$list = TestManager::runAllTests($reporter, true);
 
 		$this->assertEqual(count($out), count($list));

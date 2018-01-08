@@ -66,7 +66,7 @@ class PagesControllerTest extends CakeTestCase {
 		}
 
 		Configure::write('viewPaths', array(TEST_CAKE_CORE_INCLUDE_PATH . 'tests' . DS . 'test_app' . DS . 'views'. DS, TEST_CAKE_CORE_INCLUDE_PATH . 'libs' . DS . 'view' . DS));
-		$Pages =& new PagesController();
+		$Pages = new PagesController();
 
 		$Pages->viewPath = 'posts';
 		$Pages->display('index');

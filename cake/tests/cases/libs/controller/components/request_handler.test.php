@@ -568,7 +568,7 @@ class RequestHandlerComponentTest extends CakeTestCase {
 			array('base' => '/officespace', 'here' => '/officespace/accounts/', 'webroot' => '/officespace/')
 		));
 
-		$RequestHandler =& new NoStopRequestHandler();
+		$RequestHandler = new NoStopRequestHandler();
 
 		ob_start();
 		$RequestHandler->beforeRedirect(

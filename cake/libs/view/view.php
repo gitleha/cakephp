@@ -33,7 +33,7 @@ App::import('Core', array('Helper', 'ClassRegistry'));
  * @package       cake
  * @subpackage    cake.cake.libs.view
  */
-class View extends Object {
+class View extends CakeObject {
 /**
  * Path parts for creating links in views.
  *
@@ -744,7 +744,7 @@ class View extends Object {
 						return false;
 					}
 				}
-				$loaded[$helper] =& new $helperCn($options);
+				$loaded[$helper] = new $helperCn($options);
 				$vars = array(
 					'base', 'webroot', 'here', 'params', 'action', 'data', 'themeWeb', 'plugin'
 				);

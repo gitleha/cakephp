@@ -23,7 +23,7 @@
  * @lastmodified  $Date$
  * @license       http://www.opensource.org/licenses/opengroup.php The Open Group Test Suite License
  */
-class PluginsComponentComponent extends Object {
+class PluginsComponentComponent extends CakeObject {
 	var $components = array('TestPlugin.OtherComponent');
 }
 ?>
