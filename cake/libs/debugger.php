@@ -472,7 +472,7 @@ class Debugger extends CakeObject {
  */
 	function _output($level, $error, $code, $helpCode, $description, $file, $line, $kontext) {
 		$files = $this->trace(array('start' => 2, 'format' => 'points'));
-		$listing = $this->excerpt($files[0]['file'], $files[0]['line'] - 1, 1);
+		$listing = $this->excerpt($files[0]['file'], intval($files[0]['line']) - 1, 1);
 		$trace = $this->trace(array('start' => 2, 'depth' => '20'));
 		$context = array();
 
