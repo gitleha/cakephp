@@ -416,7 +416,7 @@ class Inflector extends CakeObject {
  * @static
  * @link http://book.cakephp.org/view/572/Class-methods
  */
-	function camelize($lowerCaseAndUnderscoredWord) {
+	public static function camelize($lowerCaseAndUnderscoredWord) {
 		return str_replace(" ", "", ucwords(str_replace("_", " ", $lowerCaseAndUnderscoredWord)));
 	}
 /**

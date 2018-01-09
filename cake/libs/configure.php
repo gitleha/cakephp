@@ -765,8 +765,8 @@ class App extends CakeObject {
  * @return boolean true if Class is already in memory or if file is found and loaded, false if not
  * @access public
  */
-	function import($type = null, $name = null, $parent = true, $search = array(), $file = null, $return = false) {
-		$plugin = $directory = null;
+	public static function import($type = null, $name = null, $parent = true, $search = array(), $file = null, $return = false) {
+        $plugin = $directory = null;
 
 		if (is_array($type)) {
 			extract($type, EXTR_OVERWRITE);
