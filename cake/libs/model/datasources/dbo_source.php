@@ -958,7 +958,7 @@ class DboSource extends DataSource {
 			if (isset($merge[$association])) {
 				$data[$association] = $merge[$association][0];
 			} else {
-				if (count($merge[0][$association]) > 1) {
+				if (is_array($merge[0][$association]) && count($merge[0][$association]) > 1) {
 					foreach ($merge[0] as $assoc => $data2) {
 						if ($assoc != $association) {
 							$merge[0][$association][$assoc] = $data2;
