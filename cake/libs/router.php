@@ -1003,7 +1003,11 @@ class Router extends CakeObject {
 		}
 
 		if (empty($params)) {
-			return Router::__mapRoute($route, array_merge($url, compact('pass', 'named', 'prefix')));
+		    if (isset($prefix)) {
+                return Router::__mapRoute($route, array_merge($url, compact('pass', 'named', 'prefix')));
+            } else {
+                return Router::__mapRoute($route, array_merge($url, compact('pass', 'named')));
+            }
 		} elseif (!empty($routeParams) && !empty($route[3])) {
 
 			if (!empty($required)) {
@@ -1031,7 +1035,12 @@ class Router extends CakeObject {
 				}
 			}
 		}
-		return Router::__mapRoute($route, array_merge($filled, compact('pass', 'named', 'prefix')));
+
+		if (isset($prefix)) {
+            return Router::__mapRoute($route, array_merge($filled, compact('pass', 'named', 'prefix')));
+        } else {
+            return Router::__mapRoute($route, array_merge($filled, compact('pass', 'named')));
+        }
 	}
 /**
  * Merges URL parameters into a route string
