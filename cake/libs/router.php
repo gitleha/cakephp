@@ -939,6 +939,7 @@ class Router extends CakeObject {
  * @static
  */
 	function mapRouteElements($route, $url) {
+	    $prefix = "";
 		if (isset($route[3]['prefix'])) {
 			$prefix = $route[3]['prefix'];
 			unset($route[3]['prefix']);

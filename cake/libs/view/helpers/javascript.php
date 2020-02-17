@@ -593,6 +593,7 @@ class JavascriptHelper extends AppHelper {
  * @return string A JSON code block
  */
 	function object($data = array(), $options = array(), $prefix = null, $postfix = null, $stringKeys = null, $quoteKeys = null, $q = null) {
+	    $block = null;
 		if (!empty($options) && !is_array($options)) {
 			$options = array('block' => $options);
 		} else if (empty($options)) {
