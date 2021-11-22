@@ -439,9 +439,9 @@ class CakeSession extends CakeObject {
 			break;
 			case 'medium':
 				$this->cookieLifeTime = 7 * 86400;
-				if ($iniSet) {
+				/*if ($iniSet) {
 					ini_set('session.referer_check', $this->host);
-				}
+				}*/
 			break;
 			case 'low':
 			default:
