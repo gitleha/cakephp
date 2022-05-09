@@ -823,6 +823,13 @@ class App extends CakeObject {
 		}
 		$ext = $_this->__settings($type, $plugin, $parent);
 
+        if ($ext == null) {
+            $ext = [
+                'class' => null,
+                'suffix' => null,
+                'path' => null
+            ];
+        }
 		if ($name != null && !class_exists($name . $ext['class'])) {
 			if ($load = $_this->__mapped($name . $ext['class'], $type, $plugin)) {
 				if ($_this->__load($load)) {
