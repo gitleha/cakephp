@@ -295,7 +295,7 @@ class DboSource extends DataSource {
 					$cache = true;
 				}
 				$args[1] = array_map(array(&$this, 'value'), $args[1]);
-				return $this->fetchAll(String::insert($args[0], $args[1]), $cache);
+				return $this->fetchAll(StringClass::insert($args[0], $args[1]), $cache);
 			}
 		}
 	}

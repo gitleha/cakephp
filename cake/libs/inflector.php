@@ -514,7 +514,7 @@ class Inflector extends CakeObject {
 			'/ß/' => 'ss',
 			'/[^\w\s]/' => ' ',
 			'/\\s+/' => $replacement,
-			String::insert('/^[:replacement]+|[:replacement]+$/', array('replacement' => preg_quote($replacement, '/'))) => '',
+			StringClass::insert('/^[:replacement]+|[:replacement]+$/', array('replacement' => preg_quote($replacement, '/'))) => '',
 		);
 		return preg_replace(array_keys($map), array_values($map), $string);
 	}

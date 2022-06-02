@@ -1365,7 +1365,7 @@ class Model extends Overloadable {
 							$db->value($row)
 						);
 						if ($isUUID && $primaryAdded) {
-							$values[] = $db->value(String::uuid());
+							$values[] = $db->value(StringClass::uuid());
 						}
 						$values = implode(',', $values);
 						$newValues[] = "({$values})";

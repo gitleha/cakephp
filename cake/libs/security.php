@@ -86,7 +86,7 @@ class Security extends CakeObject {
 		if (!class_exists('StringClass')) {
 			App::import('Core', 'StringClass');
 		}
-		return Security::hash(String::uuid());
+		return Security::hash(StringClass::uuid());
 	}
 /**
  * Validate authorization hash.
