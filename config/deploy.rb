@@ -21,7 +21,6 @@ set :deploy_to, "/var/www/html/cakephp"
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, ".htaccess", "config/database.php", "config/core.php", "webroot/index.php", "webroot/.htaccess"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
@@ -46,13 +45,4 @@ namespace :deploy do
             execute :chmod, "-R 777 #{current_path}/tmp/*"
         end
     end
-
-    task :sharedDirectory do
-        on roles :all do
-            execute "ln -sf #{fetch(:media_indemnites)} #{current_path}/tmp"
-            execute "ln -sf #{fetch(:media_attachments)} #{current_path}/tmp"
-        end
-    end
 end
-
-after "deploy:finished", "deploy:sharedDirectory"
