@@ -33,16 +33,3 @@ set :deploy_to, "/var/www/html/cakephp"
 
 # Default value for keep_releases is 5
 set :keep_releases, 3
-
-after :deploy, "deploy:chcon"
-
-# Uncomment the following to require manually verifying the host key before first deploy.
-# set :ssh_options, verify_host_key: :secure
-
-namespace :deploy do
-    task :chcon do
-        on roles :all do
-            execute :chmod, "-R 777 #{current_path}/tmp/*"
-        end
-    end
-end
