@@ -1,0 +1,1171 @@
+# Logfile created on 2022-05-05 11:53:02 +0200 by logger.rb/v1.4.2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-05-05 11:53:02 +0200 cap recette deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c4332fe4] Running /usr/bin/env mkdir -p /tmp as root@rvweb02
+  INFO [cebd27ab] Running /usr/bin/env mkdir -p /tmp as root@rvweb01
+ DEBUG [cebd27ab] Command: /usr/bin/env mkdir -p /tmp
+  INFO [3cfaf9c1] Running /usr/bin/env mkdir -p /tmp as root@rvweb03
+ DEBUG [3cfaf9c1] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [c4332fe4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c4332fe4] Finished in 0.230 seconds with exit status 0 (successful).
+  INFO [cebd27ab] Finished in 0.248 seconds with exit status 0 (successful).
+  INFO [3cfaf9c1] Finished in 0.250 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh 0.0%
+  INFO Uploading /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh 100.0%
+ DEBUG Uploading /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh 0.0%
+  INFO Uploading /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh 100.0%
+  INFO Uploading /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh 100.0%
+  INFO [b80e3710] Running /usr/bin/env chmod 700 /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh as root@rvweb02
+ DEBUG [b80e3710] Command: /usr/bin/env chmod 700 /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh
+  INFO [bb6e58ce] Running /usr/bin/env chmod 700 /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh as root@rvweb01
+ DEBUG [bb6e58ce] Command: /usr/bin/env chmod 700 /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh
+  INFO [f73e8785] Running /usr/bin/env chmod 700 /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh as root@rvweb03
+ DEBUG [f73e8785] Command: /usr/bin/env chmod 700 /tmp/git-ssh-f5ca859d90cf3fb7cb81.sh
+  INFO [b80e3710] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [f73e8785] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [bb6e58ce] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [64a61ec4] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb03
+  INFO [1297bee9] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb01
+ DEBUG [1297bee9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+  INFO [f37f2f30] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb02
+ DEBUG [64a61ec4] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [f37f2f30] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [f37f2f30] 	ee521c8723c651177b58949c2de9639c47b6b438	HEAD
+  INFO [f37f2f30] Finished in 1.123 seconds with exit status 0 (successful).
+ DEBUG [64a61ec4] 	ee521c8723c651177b58949c2de9639c47b6b438	HEAD
+  INFO [64a61ec4] Finished in 1.148 seconds with exit status 0 (successful).
+ DEBUG [1297bee9] 	ee521c8723c651177b58949c2de9639c47b6b438	HEAD
+  INFO [1297bee9] Finished in 1.161 seconds with exit status 0 (successful).
+  INFO [2cf590c4] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb03
+ DEBUG [2cf590c4] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [244335e4] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb02
+ DEBUG [244335e4] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [3460a6eb] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb01
+ DEBUG [3460a6eb] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [244335e4] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [2cf590c4] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [3460a6eb] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [9cda21fa] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb01
+ DEBUG [9cda21fa] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [fc798ec9] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb03
+ DEBUG [fc798ec9] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [c10c5b2c] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb02
+ DEBUG [c10c5b2c] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [c10c5b2c] Finished in 0.007 seconds with exit status 1 (failed).
+ DEBUG [fc798ec9] Finished in 0.044 seconds with exit status 1 (failed).
+ DEBUG [9cda21fa] Finished in 0.050 seconds with exit status 1 (failed).
+ DEBUG [8fd36323] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb03
+ DEBUG [8fd36323] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [0a4ca946] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb01
+ DEBUG [0a4ca946] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [a4e76011] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb02
+ DEBUG [a4e76011] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [a4e76011] Finished in 0.013 seconds with exit status 1 (failed).
+ DEBUG [50d056de] Running if test ! -d /var/www/cakephp; then echo "Directory does not exist '/var/www/cakephp'" 1>&2; false; fi as root@rvweb02
+ DEBUG [50d056de] Command: if test ! -d /var/www/cakephp; then echo "Directory does not exist '/var/www/cakephp'" 1>&2; false; fi
+ DEBUG [8fd36323] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [377b4d72] Running if test ! -d /var/www/cakephp; then echo "Directory does not exist '/var/www/cakephp'" 1>&2; false; fi as root@rvweb03
+ DEBUG [377b4d72] Command: if test ! -d /var/www/cakephp; then echo "Directory does not exist '/var/www/cakephp'" 1>&2; false; fi
+ DEBUG [0a4ca946] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [2ad3c5ab] Running if test ! -d /var/www/cakephp; then echo "Directory does not exist '/var/www/cakephp'" 1>&2; false; fi as root@rvweb01
+ DEBUG [2ad3c5ab] Command: if test ! -d /var/www/cakephp; then echo "Directory does not exist '/var/www/cakephp'" 1>&2; false; fi
+ DEBUG [50d056de] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [92ddc817] Running /usr/bin/env git clone --mirror git@github.com:gitleha/cakephp.git /var/www/cakephp/repo as root@rvweb02
+ DEBUG [92ddc817] Command: cd /var/www/cakephp && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git clone --mirror git@github.com:gitleha/cakephp.git /var/www/cakephp/repo )
+ DEBUG [377b4d72] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [a6c78346] Running /usr/bin/env git clone --mirror git@github.com:gitleha/cakephp.git /var/www/cakephp/repo as root@rvweb03
+ DEBUG [a6c78346] Command: cd /var/www/cakephp && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git clone --mirror git@github.com:gitleha/cakephp.git /var/www/cakephp/repo )
+ DEBUG [2ad3c5ab] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [c4548206] Running /usr/bin/env git clone --mirror git@github.com:gitleha/cakephp.git /var/www/cakephp/repo as root@rvweb01
+ DEBUG [c4548206] Command: cd /var/www/cakephp && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git clone --mirror git@github.com:gitleha/cakephp.git /var/www/cakephp/repo )
+ DEBUG [92ddc817] 	Clonage dans le dépôt nu '/var/www/cakephp/repo'
+ DEBUG [a6c78346] 	Clonage dans le dépôt nu '/var/www/cakephp/repo'
+ DEBUG [c4548206] 	Clonage dans le dépôt nu '/var/www/cakephp/repo'
+  INFO [c4548206] Finished in 1.791 seconds with exit status 0 (successful).
+  INFO [92ddc817] Finished in 1.949 seconds with exit status 0 (successful).
+  INFO [a6c78346] Finished in 2.086 seconds with exit status 0 (successful).
+ DEBUG [e06b0ee7] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [e06b0ee7] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [b0d3ec52] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [b0d3ec52] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [d3509a7c] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [d3509a7c] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [e06b0ee7] Finished in 0.016 seconds with exit status 0 (successful).
+  INFO [d4440e2e] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb01
+ DEBUG [d4440e2e] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [b0d3ec52] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO [7bb39768] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb02
+ DEBUG [7bb39768] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [d3509a7c] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [be844824] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb03
+ DEBUG [be844824] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+  INFO [d4440e2e] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [4d01c963] Running /usr/bin/env git remote update --prune as root@rvweb01
+ DEBUG [4d01c963] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git remote update --prune )
+  INFO [7bb39768] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [307403c5] Running /usr/bin/env git remote update --prune as root@rvweb02
+ DEBUG [307403c5] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git remote update --prune )
+  INFO [be844824] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [c3497382] Running /usr/bin/env git remote update --prune as root@rvweb03
+ DEBUG [c3497382] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4d01c963] 	Récupération de origin
+ DEBUG [307403c5] 	Récupération de origin
+ DEBUG [c3497382] 	Récupération de origin
+  INFO [4d01c963] Finished in 1.177 seconds with exit status 0 (successful).
+  INFO [307403c5] Finished in 1.186 seconds with exit status 0 (successful).
+  INFO [c3497382] Finished in 1.169 seconds with exit status 0 (successful).
+ DEBUG [4585a9bc] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [4585a9bc] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [b0bc098a] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [b0bc098a] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [50f62036] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [50f62036] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [b0bc098a] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [891a20ae] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220505095304 as root@rvweb01
+ DEBUG [891a20ae] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220505095304 )
+ DEBUG [4585a9bc] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [9c42e192] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220505095304 as root@rvweb02
+ DEBUG [9c42e192] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220505095304 )
+ DEBUG [50f62036] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [57f654f3] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220505095304 as root@rvweb03
+ DEBUG [57f654f3] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220505095304 )
+  INFO [891a20ae] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [beb98241] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220505095304 as root@rvweb01
+ DEBUG [beb98241] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220505095304 )
+  INFO [9c42e192] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [7ae21ae8] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220505095304 as root@rvweb02
+ DEBUG [7ae21ae8] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220505095304 )
+  INFO [57f654f3] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [ea82457a] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220505095304 as root@rvweb03
+ DEBUG [ea82457a] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220505095304 )
+  INFO [beb98241] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [ea82457a] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [7ae21ae8] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [7601f3bf] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [9e2dabda] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [9e2dabda] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [d808052b] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [7601f3bf] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [d808052b] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [7601f3bf] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [bed45be9] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb01
+ DEBUG [bed45be9] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d808052b] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [dcff2de4] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb03
+ DEBUG [dcff2de4] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [9e2dabda] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [41faa56d] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb02
+ DEBUG [41faa56d] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f5ca859d90cf3fb7cb81.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [bed45be9] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [dcff2de4] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [bed45be9] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [dcff2de4] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [41faa56d] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [41faa56d] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [88c2fe99] Running if test ! -d /var/www/cakephp/releases/20220505095304; then echo "Directory does not exist '/var/www/cakephp/releases/20220505095304'" 1>&2; false; fi as root@rvweb01
+ DEBUG [88c2fe99] Command: if test ! -d /var/www/cakephp/releases/20220505095304; then echo "Directory does not exist '/var/www/cakephp/releases/20220505095304'" 1>&2; false; fi
+ DEBUG [2f59ce5e] Running if test ! -d /var/www/cakephp/releases/20220505095304; then echo "Directory does not exist '/var/www/cakephp/releases/20220505095304'" 1>&2; false; fi as root@rvweb02
+ DEBUG [2f59ce5e] Command: if test ! -d /var/www/cakephp/releases/20220505095304; then echo "Directory does not exist '/var/www/cakephp/releases/20220505095304'" 1>&2; false; fi
+ DEBUG [644baa48] Running if test ! -d /var/www/cakephp/releases/20220505095304; then echo "Directory does not exist '/var/www/cakephp/releases/20220505095304'" 1>&2; false; fi as root@rvweb03
+ DEBUG [644baa48] Command: if test ! -d /var/www/cakephp/releases/20220505095304; then echo "Directory does not exist '/var/www/cakephp/releases/20220505095304'" 1>&2; false; fi
+ DEBUG [644baa48] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [bee8c8b9] Running /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION as root@rvweb03
+ DEBUG [88c2fe99] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [bee8c8b9] Command: cd /var/www/cakephp/releases/20220505095304 && /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION
+  INFO [c5e50b2b] Running /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION as root@rvweb01
+ DEBUG [c5e50b2b] Command: cd /var/www/cakephp/releases/20220505095304 && /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION
+ DEBUG [2f59ce5e] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [5221bac6] Running /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION as root@rvweb02
+ DEBUG [5221bac6] Command: cd /var/www/cakephp/releases/20220505095304 && /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION
+  INFO [bee8c8b9] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [c5e50b2b] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [5221bac6] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [da23696f] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220505095304 /var/www/cakephp/releases/current as root@rvweb01
+ DEBUG [da23696f] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220505095304 /var/www/cakephp/releases/current
+  INFO [6120ef26] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220505095304 /var/www/cakephp/releases/current as root@rvweb03
+ DEBUG [6120ef26] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220505095304 /var/www/cakephp/releases/current
+  INFO [08325742] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220505095304 /var/www/cakephp/releases/current as root@rvweb02
+ DEBUG [08325742] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220505095304 /var/www/cakephp/releases/current
+  INFO [6120ef26] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [acd20fb0] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb03
+ DEBUG [acd20fb0] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [da23696f] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [44869efb] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb01
+ DEBUG [44869efb] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [08325742] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [e7c0a60f] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb02
+ DEBUG [e7c0a60f] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [acd20fb0] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [44869efb] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [e7c0a60f] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [0c7e1f7b] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb01
+ DEBUG [ee4201fb] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb02
+ DEBUG [ee4201fb] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [876e8cc5] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb03
+ DEBUG [0c7e1f7b] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [876e8cc5] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [876e8cc5] 	20220505095304
+ DEBUG [876e8cc5] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [0c7e1f7b] 	20220505095304
+ DEBUG [0c7e1f7b] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [ee4201fb] 	20220505095304
+ DEBUG [ee4201fb] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [2de83450] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb01
+ DEBUG [b0c531dd] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb02
+ DEBUG [b0c531dd] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [2de83450] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [26d72c24] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb03
+ DEBUG [26d72c24] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [26d72c24] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [c47cf607] Running /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220505095304 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb03
+ DEBUG [c47cf607] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220505095304 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [2de83450] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [49d27ac6] Running /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220505095304 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb01
+ DEBUG [49d27ac6] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220505095304 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [b0c531dd] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [48293d62] Running /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220505095304 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb02
+ DEBUG [48293d62] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220505095304 by sylvain" >> /var/www/cakephp/revisions.log
+  INFO [c47cf607] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [49d27ac6] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [48293d62] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-05-06 17:18:05 +0200 cap recette deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [29e04e27] Running /usr/bin/env mkdir -p /tmp as root@rvweb01
+ DEBUG [29e04e27] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0a4152d9] Running /usr/bin/env mkdir -p /tmp as root@rvweb03
+ DEBUG [0a4152d9] Command: /usr/bin/env mkdir -p /tmp
+  INFO [aa7177d2] Running /usr/bin/env mkdir -p /tmp as root@rvweb02
+ DEBUG [aa7177d2] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0a4152d9] Finished in 0.211 seconds with exit status 0 (successful).
+  INFO [29e04e27] Finished in 0.218 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-457c17d0d6b4b16248e6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-457c17d0d6b4b16248e6.sh 100.0%
+ DEBUG Uploading /tmp/git-ssh-457c17d0d6b4b16248e6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-457c17d0d6b4b16248e6.sh 100.0%
+  INFO [aa7177d2] Finished in 0.293 seconds with exit status 0 (successful).
+  INFO [f258980b] Running /usr/bin/env chmod 700 /tmp/git-ssh-457c17d0d6b4b16248e6.sh as root@rvweb03
+ DEBUG [f258980b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-457c17d0d6b4b16248e6.sh
+  INFO [cd0fa597] Running /usr/bin/env chmod 700 /tmp/git-ssh-457c17d0d6b4b16248e6.sh as root@rvweb01
+ DEBUG [cd0fa597] Command: /usr/bin/env chmod 700 /tmp/git-ssh-457c17d0d6b4b16248e6.sh
+ DEBUG Uploading /tmp/git-ssh-457c17d0d6b4b16248e6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-457c17d0d6b4b16248e6.sh 100.0%
+  INFO [f258980b] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [cd0fa597] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [e44d4169] Running /usr/bin/env chmod 700 /tmp/git-ssh-457c17d0d6b4b16248e6.sh as root@rvweb02
+ DEBUG [e44d4169] Command: /usr/bin/env chmod 700 /tmp/git-ssh-457c17d0d6b4b16248e6.sh
+  INFO [e44d4169] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [08065b6d] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb03
+  INFO [bf5d8deb] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb02
+ DEBUG [bf5d8deb] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [08065b6d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+  INFO [9ed0c5bd] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb01
+ DEBUG [9ed0c5bd] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [9ed0c5bd] 	ee521c8723c651177b58949c2de9639c47b6b438	HEAD
+  INFO [9ed0c5bd] Finished in 1.125 seconds with exit status 0 (successful).
+ DEBUG [08065b6d] 	ee521c8723c651177b58949c2de9639c47b6b438	HEAD
+  INFO [08065b6d] Finished in 1.140 seconds with exit status 0 (successful).
+ DEBUG [bf5d8deb] 	ee521c8723c651177b58949c2de9639c47b6b438	HEAD
+  INFO [bf5d8deb] Finished in 1.170 seconds with exit status 0 (successful).
+  INFO [70e5be0d] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb01
+ DEBUG [70e5be0d] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [5fa4918c] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb03
+  INFO [95b428ea] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb02
+ DEBUG [95b428ea] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+ DEBUG [5fa4918c] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [70e5be0d] Finished in 0.013 seconds with exit status 0 (successful).
+  INFO [5fa4918c] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO [95b428ea] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [49669548] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb02
+ DEBUG [49669548] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [161a3551] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb01
+ DEBUG [161a3551] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [3e87bc39] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb03
+ DEBUG [3e87bc39] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [161a3551] Finished in 0.018 seconds with exit status 0 (successful).
+ DEBUG [679222e9] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb01
+ DEBUG [679222e9] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [3e87bc39] Finished in 0.020 seconds with exit status 0 (successful).
+ DEBUG [8e04b049] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb03
+ DEBUG [8e04b049] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [49669548] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [801902a4] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb02
+ DEBUG [801902a4] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [8e04b049] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [679222e9] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [8e04b049] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [679222e9] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [801902a4] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [801902a4] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [8b43c141] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb01
+ DEBUG [8b43c141] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [d33c39eb] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb03
+ DEBUG [d33c39eb] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [a387de1b] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb02
+ DEBUG [a387de1b] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [d33c39eb] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [8b43c141] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [a387de1b] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [d8cae6c4] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [d8cae6c4] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [0eea7930] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [0eea7930] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [011e7781] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [011e7781] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [d8cae6c4] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [34fb9951] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb01
+ DEBUG [34fb9951] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [011e7781] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [ed168d37] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb03
+ DEBUG [ed168d37] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [0eea7930] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [ea4fe74f] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb02
+ DEBUG [ea4fe74f] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+  INFO [34fb9951] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [de91ec22] Running /usr/bin/env git remote update --prune as root@rvweb01
+ DEBUG [de91ec22] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git remote update --prune )
+  INFO [ed168d37] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [8f8a98a2] Running /usr/bin/env git remote update --prune as root@rvweb03
+ DEBUG [8f8a98a2] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git remote update --prune )
+  INFO [ea4fe74f] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [99d4ddb6] Running /usr/bin/env git remote update --prune as root@rvweb02
+ DEBUG [99d4ddb6] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [de91ec22] 	Récupération de origin
+ DEBUG [8f8a98a2] 	Récupération de origin
+ DEBUG [99d4ddb6] 	Récupération de origin
+  INFO [8f8a98a2] Finished in 1.178 seconds with exit status 0 (successful).
+  INFO [99d4ddb6] Finished in 1.166 seconds with exit status 0 (successful).
+  INFO [de91ec22] Finished in 1.232 seconds with exit status 0 (successful).
+ DEBUG [bf7e709b] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [bf7e709b] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [131fe600] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [131fe600] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [4996f447] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [4996f447] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [131fe600] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [04c18073] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220506151806 as root@rvweb03
+ DEBUG [04c18073] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220506151806 )
+ DEBUG [4996f447] Finished in 0.011 seconds with exit status 0 (successful).
+  INFO [3222169c] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220506151806 as root@rvweb02
+ DEBUG [3222169c] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220506151806 )
+ DEBUG [bf7e709b] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [5233de46] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220506151806 as root@rvweb01
+ DEBUG [5233de46] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220506151806 )
+  INFO [04c18073] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [aeb3a853] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220506151806 as root@rvweb03
+ DEBUG [aeb3a853] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220506151806 )
+  INFO [3222169c] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [3482adf9] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220506151806 as root@rvweb02
+ DEBUG [3482adf9] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220506151806 )
+  INFO [5233de46] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [6af87734] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220506151806 as root@rvweb01
+ DEBUG [6af87734] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220506151806 )
+  INFO [aeb3a853] Finished in 0.121 seconds with exit status 0 (successful).
+  INFO [3482adf9] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [6af87734] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [bc72f26b] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [bc72f26b] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [a21a7cc3] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [a21a7cc3] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [d58d0be3] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [d58d0be3] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [a21a7cc3] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [de4815bb] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb02
+ DEBUG [de4815bb] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d58d0be3] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [5800008c] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb03
+ DEBUG [5800008c] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [bc72f26b] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [11e613cd] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb01
+ DEBUG [11e613cd] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-457c17d0d6b4b16248e6.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [de4815bb] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [de4815bb] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [5800008c] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [5800008c] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [11e613cd] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [11e613cd] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [9e50a50f] Running if test ! -d /var/www/cakephp/releases/20220506151806; then echo "Directory does not exist '/var/www/cakephp/releases/20220506151806'" 1>&2; false; fi as root@rvweb01
+ DEBUG [9e50a50f] Command: if test ! -d /var/www/cakephp/releases/20220506151806; then echo "Directory does not exist '/var/www/cakephp/releases/20220506151806'" 1>&2; false; fi
+ DEBUG [e0872bcf] Running if test ! -d /var/www/cakephp/releases/20220506151806; then echo "Directory does not exist '/var/www/cakephp/releases/20220506151806'" 1>&2; false; fi as root@rvweb02
+ DEBUG [e0872bcf] Command: if test ! -d /var/www/cakephp/releases/20220506151806; then echo "Directory does not exist '/var/www/cakephp/releases/20220506151806'" 1>&2; false; fi
+ DEBUG [34e60f7d] Running if test ! -d /var/www/cakephp/releases/20220506151806; then echo "Directory does not exist '/var/www/cakephp/releases/20220506151806'" 1>&2; false; fi as root@rvweb03
+ DEBUG [34e60f7d] Command: if test ! -d /var/www/cakephp/releases/20220506151806; then echo "Directory does not exist '/var/www/cakephp/releases/20220506151806'" 1>&2; false; fi
+ DEBUG [34e60f7d] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [83160f95] Running /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION as root@rvweb03
+ DEBUG [83160f95] Command: cd /var/www/cakephp/releases/20220506151806 && /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION
+ DEBUG [e0872bcf] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [6bccefd7] Running /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION as root@rvweb02
+ DEBUG [6bccefd7] Command: cd /var/www/cakephp/releases/20220506151806 && /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION
+ DEBUG [9e50a50f] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [5013069f] Running /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION as root@rvweb01
+ DEBUG [5013069f] Command: cd /var/www/cakephp/releases/20220506151806 && /usr/bin/env echo "ee521c8723c651177b58949c2de9639c47b6b438" > REVISION
+  INFO [83160f95] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [6bccefd7] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [5013069f] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [a457363b] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220506151806 /var/www/cakephp/releases/current as root@rvweb03
+ DEBUG [a457363b] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220506151806 /var/www/cakephp/releases/current
+  INFO [bfbabebd] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220506151806 /var/www/cakephp/releases/current as root@rvweb02
+ DEBUG [bfbabebd] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220506151806 /var/www/cakephp/releases/current
+  INFO [a7d9ea7f] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220506151806 /var/www/cakephp/releases/current as root@rvweb01
+ DEBUG [a7d9ea7f] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220506151806 /var/www/cakephp/releases/current
+  INFO [bfbabebd] Finished in 0.013 seconds with exit status 0 (successful).
+  INFO [a457363b] Finished in 0.014 seconds with exit status 0 (successful).
+  INFO [3e696942] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb02
+ DEBUG [3e696942] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [f91f771f] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb03
+ DEBUG [f91f771f] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [a7d9ea7f] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [affa9854] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb01
+ DEBUG [affa9854] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [f91f771f] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [3e696942] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [affa9854] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [6036923c] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb01
+ DEBUG [6036923c] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [19b7fa36] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb03
+ DEBUG [19b7fa36] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [c9550c4c] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb02
+ DEBUG [c9550c4c] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [19b7fa36] 	20220505095304	20220506151806
+ DEBUG [19b7fa36] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [c9550c4c] 	20220505095304	20220506151806
+ DEBUG [c9550c4c] Finished in 0.019 seconds with exit status 0 (successful).
+ DEBUG [6036923c] 	20220505095304	20220506151806
+ DEBUG [6036923c] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [7a3dd67f] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb01
+ DEBUG [7a3dd67f] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [346dd70c] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb03
+ DEBUG [346dd70c] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [41ac7c51] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb02
+ DEBUG [41ac7c51] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [346dd70c] Finished in 0.010 seconds with exit status 0 (successful).
+  INFO [98e40a55] Running /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220506151806 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb03
+ DEBUG [98e40a55] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220506151806 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [41ac7c51] Finished in 0.019 seconds with exit status 0 (successful).
+  INFO [4c5c3a86] Running /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220506151806 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb02
+ DEBUG [4c5c3a86] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220506151806 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [7a3dd67f] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [c9c3b8a1] Running /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220506151806 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb01
+ DEBUG [c9c3b8a1] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at ee521c8723c651177b58949c2de9639c47b6b438) deployed as release 20220506151806 by sylvain" >> /var/www/cakephp/revisions.log
+  INFO [98e40a55] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [4c5c3a86] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [c9c3b8a1] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-05-12 14:21:52 +0200 cap recette deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7aa67990] Running /usr/bin/env mkdir -p /tmp as root@rvweb01
+  INFO [86217f87] Running /usr/bin/env mkdir -p /tmp as root@rvweb02
+ DEBUG [86217f87] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bbed26b1] Running /usr/bin/env mkdir -p /tmp as root@rvweb03
+ DEBUG [7aa67990] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [bbed26b1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bbed26b1] Finished in 0.231 seconds with exit status 0 (successful).
+  INFO [7aa67990] Finished in 0.252 seconds with exit status 0 (successful).
+  INFO [86217f87] Finished in 0.255 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-7f91f2e21549d62fd255.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7f91f2e21549d62fd255.sh 100.0%
+ DEBUG Uploading /tmp/git-ssh-7f91f2e21549d62fd255.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7f91f2e21549d62fd255.sh 100.0%
+ DEBUG Uploading /tmp/git-ssh-7f91f2e21549d62fd255.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7f91f2e21549d62fd255.sh 100.0%
+  INFO [7345bdf9] Running /usr/bin/env chmod 700 /tmp/git-ssh-7f91f2e21549d62fd255.sh as root@rvweb03
+ DEBUG [7345bdf9] Command: /usr/bin/env chmod 700 /tmp/git-ssh-7f91f2e21549d62fd255.sh
+  INFO [8bda6c24] Running /usr/bin/env chmod 700 /tmp/git-ssh-7f91f2e21549d62fd255.sh as root@rvweb01
+ DEBUG [8bda6c24] Command: /usr/bin/env chmod 700 /tmp/git-ssh-7f91f2e21549d62fd255.sh
+  INFO [6ffd4195] Running /usr/bin/env chmod 700 /tmp/git-ssh-7f91f2e21549d62fd255.sh as root@rvweb02
+ DEBUG [6ffd4195] Command: /usr/bin/env chmod 700 /tmp/git-ssh-7f91f2e21549d62fd255.sh
+  INFO [7345bdf9] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [8bda6c24] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [6ffd4195] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [690ae42c] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb03
+  INFO [8327a0a2] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb02
+ DEBUG [8327a0a2] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+  INFO [1ec99bad] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb01
+ DEBUG [1ec99bad] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [690ae42c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [690ae42c] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b	HEAD
+  INFO [690ae42c] Finished in 1.145 seconds with exit status 0 (successful).
+ DEBUG [1ec99bad] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b	HEAD
+  INFO [1ec99bad] Finished in 1.160 seconds with exit status 0 (successful).
+ DEBUG [8327a0a2] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b	HEAD
+  INFO [8327a0a2] Finished in 1.170 seconds with exit status 0 (successful).
+  INFO [502d3bdc] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb01
+ DEBUG [502d3bdc] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [d10f6679] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb03
+ DEBUG [d10f6679] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [7464d806] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb02
+ DEBUG [7464d806] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [502d3bdc] Finished in 0.015 seconds with exit status 0 (successful).
+  INFO [7464d806] Finished in 0.019 seconds with exit status 0 (successful).
+  INFO [d10f6679] Finished in 0.023 seconds with exit status 0 (successful).
+ DEBUG [502a8dca] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb03
+ DEBUG [502a8dca] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [7e3ab7f9] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb02
+ DEBUG [cf580bf0] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb01
+ DEBUG [cf580bf0] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [7e3ab7f9] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [cf580bf0] Finished in 0.038 seconds with exit status 0 (successful).
+ DEBUG [76a494d8] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb01
+ DEBUG [76a494d8] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [7e3ab7f9] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [47bda516] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb02
+ DEBUG [47bda516] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [502a8dca] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [ade7f53d] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb03
+ DEBUG [ade7f53d] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [76a494d8] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [76a494d8] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [47bda516] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [47bda516] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [ade7f53d] 	ee521c8723c651177b58949c2de9639c47b6b438
+ DEBUG [ade7f53d] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [2966e7c2] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb01
+ DEBUG [519e3250] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb02
+ DEBUG [519e3250] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [39a9ac80] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb03
+ DEBUG [2966e7c2] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [39a9ac80] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [2966e7c2] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [519e3250] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [39a9ac80] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [89fd1805] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [f48a9552] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [f48a9552] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [db78d1f1] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [db78d1f1] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [89fd1805] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [89fd1805] Finished in 0.019 seconds with exit status 0 (successful).
+  INFO [3fdd75b6] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb01
+ DEBUG [3fdd75b6] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [db78d1f1] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [cfcf6a0f] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb02
+ DEBUG [cfcf6a0f] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [f48a9552] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [908fdca6] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb03
+ DEBUG [908fdca6] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+  INFO [3fdd75b6] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [797c242c] Running /usr/bin/env git remote update --prune as root@rvweb01
+ DEBUG [797c242c] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git remote update --prune )
+  INFO [cfcf6a0f] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [d92a4bbc] Running /usr/bin/env git remote update --prune as root@rvweb02
+ DEBUG [d92a4bbc] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git remote update --prune )
+  INFO [908fdca6] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [16304bb3] Running /usr/bin/env git remote update --prune as root@rvweb03
+ DEBUG [16304bb3] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [797c242c] 	Récupération de origin
+ DEBUG [d92a4bbc] 	Récupération de origin
+ DEBUG [16304bb3] 	Récupération de origin
+ DEBUG [d92a4bbc] 	Depuis github.com:gitleha/cakephp
+   ee521c8..6dfd004  master     -> master
+  INFO [d92a4bbc] Finished in 1.238 seconds with exit status 0 (successful).
+ DEBUG [797c242c] 	Depuis github.com:gitleha/cakephp
+   ee521c8..6dfd004  master     -> master
+  INFO [797c242c] Finished in 1.261 seconds with exit status 0 (successful).
+ DEBUG [16304bb3] 	Depuis github.com:gitleha/cakephp
+ DEBUG [16304bb3] 	   ee521c8..6dfd004  master     -> master
+  INFO [16304bb3] Finished in 1.257 seconds with exit status 0 (successful).
+ DEBUG [5800d48e] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [c6c7b37b] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [c6c7b37b] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [5800d48e] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [1d2f54b8] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [1d2f54b8] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [5800d48e] Finished in 0.015 seconds with exit status 0 (successful).
+  INFO [c20e8137] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512122154 as root@rvweb02
+ DEBUG [c20e8137] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512122154 )
+ DEBUG [c6c7b37b] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [47a97c57] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512122154 as root@rvweb01
+ DEBUG [47a97c57] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512122154 )
+ DEBUG [1d2f54b8] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [bebe6807] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512122154 as root@rvweb03
+ DEBUG [bebe6807] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512122154 )
+  INFO [c20e8137] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [7d94e4f3] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512122154 as root@rvweb02
+ DEBUG [7d94e4f3] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512122154 )
+  INFO [47a97c57] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [01a53746] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512122154 as root@rvweb01
+ DEBUG [01a53746] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512122154 )
+  INFO [bebe6807] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [c6a35850] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512122154 as root@rvweb03
+ DEBUG [c6a35850] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512122154 )
+  INFO [7d94e4f3] Finished in 0.112 seconds with exit status 0 (successful).
+  INFO [01a53746] Finished in 0.112 seconds with exit status 0 (successful).
+  INFO [c6a35850] Finished in 0.115 seconds with exit status 0 (successful).
+ DEBUG [65806ab6] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [65806ab6] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [fa8256be] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [fa8256be] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [6b80663c] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [6b80663c] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [fa8256be] Finished in 0.015 seconds with exit status 0 (successful).
+ DEBUG [617fb5d8] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb02
+ DEBUG [617fb5d8] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [6b80663c] Finished in 0.030 seconds with exit status 0 (successful).
+ DEBUG [cfd71706] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb01
+ DEBUG [cfd71706] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [65806ab6] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [869958ba] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb03
+ DEBUG [869958ba] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7f91f2e21549d62fd255.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [617fb5d8] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [617fb5d8] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [cfd71706] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [cfd71706] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [869958ba] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [869958ba] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [17a3925c] Running if test ! -d /var/www/cakephp/releases/20220512122154; then echo "Directory does not exist '/var/www/cakephp/releases/20220512122154'" 1>&2; false; fi as root@rvweb01
+ DEBUG [496f2e26] Running if test ! -d /var/www/cakephp/releases/20220512122154; then echo "Directory does not exist '/var/www/cakephp/releases/20220512122154'" 1>&2; false; fi as root@rvweb02
+ DEBUG [496f2e26] Command: if test ! -d /var/www/cakephp/releases/20220512122154; then echo "Directory does not exist '/var/www/cakephp/releases/20220512122154'" 1>&2; false; fi
+ DEBUG [ee7f62ad] Running if test ! -d /var/www/cakephp/releases/20220512122154; then echo "Directory does not exist '/var/www/cakephp/releases/20220512122154'" 1>&2; false; fi as root@rvweb03
+ DEBUG [ee7f62ad] Command: if test ! -d /var/www/cakephp/releases/20220512122154; then echo "Directory does not exist '/var/www/cakephp/releases/20220512122154'" 1>&2; false; fi
+ DEBUG [17a3925c] Command: if test ! -d /var/www/cakephp/releases/20220512122154; then echo "Directory does not exist '/var/www/cakephp/releases/20220512122154'" 1>&2; false; fi
+ DEBUG [496f2e26] Finished in 0.013 seconds with exit status 0 (successful).
+  INFO [cf8b0dcf] Running /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION as root@rvweb02
+ DEBUG [cf8b0dcf] Command: cd /var/www/cakephp/releases/20220512122154 && /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION
+ DEBUG [17a3925c] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [4b601a67] Running /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION as root@rvweb01
+ DEBUG [4b601a67] Command: cd /var/www/cakephp/releases/20220512122154 && /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION
+ DEBUG [ee7f62ad] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [7cee7e36] Running /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION as root@rvweb03
+ DEBUG [7cee7e36] Command: cd /var/www/cakephp/releases/20220512122154 && /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION
+  INFO [cf8b0dcf] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [4b601a67] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [7cee7e36] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [8d59d35b] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220512122154 /var/www/cakephp/releases/current as root@rvweb01
+  INFO [1b7856c8] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220512122154 /var/www/cakephp/releases/current as root@rvweb02
+ DEBUG [1b7856c8] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220512122154 /var/www/cakephp/releases/current
+ DEBUG [8d59d35b] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220512122154 /var/www/cakephp/releases/current
+  INFO [3267c4a5] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220512122154 /var/www/cakephp/releases/current as root@rvweb03
+ DEBUG [3267c4a5] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220512122154 /var/www/cakephp/releases/current
+  INFO [1b7856c8] Finished in 0.016 seconds with exit status 0 (successful).
+  INFO [5e414bb6] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb02
+ DEBUG [5e414bb6] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [8d59d35b] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [23b2b6d2] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb01
+ DEBUG [23b2b6d2] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [3267c4a5] Finished in 0.040 seconds with exit status 0 (successful).
+  INFO [d4c51019] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb03
+ DEBUG [d4c51019] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [5e414bb6] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [23b2b6d2] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [d4c51019] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [ec31be7d] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb02
+ DEBUG [ec31be7d] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [328d325f] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb01
+ DEBUG [328d325f] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [b3d7d833] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb03
+ DEBUG [b3d7d833] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [ec31be7d] 	20220505095304	20220506151806	20220512122154
+ DEBUG [ec31be7d] Finished in 0.026 seconds with exit status 0 (successful).
+ DEBUG [328d325f] 	20220505095304	20220506151806	20220512122154
+ DEBUG [328d325f] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [b3d7d833] 	20220505095304	20220506151806	20220512122154
+ DEBUG [b3d7d833] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [f38647c4] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb03
+ DEBUG [55591f8f] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb01
+ DEBUG [55591f8f] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [3fe720e5] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb02
+ DEBUG [3fe720e5] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [f38647c4] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [3fe720e5] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO [4c5151c5] Running /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512122154 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb02
+ DEBUG [4c5151c5] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512122154 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [55591f8f] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [baf7286b] Running /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512122154 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb01
+ DEBUG [baf7286b] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512122154 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [f38647c4] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [5069ab23] Running /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512122154 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb03
+ DEBUG [5069ab23] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512122154 by sylvain" >> /var/www/cakephp/revisions.log
+  INFO [4c5151c5] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [baf7286b] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [5069ab23] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-05-12 15:13:44 +0200 cap recette deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6a781fa7] Running /usr/bin/env mkdir -p /tmp as root@rvweb01
+  INFO [aa49774b] Running /usr/bin/env mkdir -p /tmp as root@rvweb02
+ DEBUG [aa49774b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [aedc528e] Running /usr/bin/env mkdir -p /tmp as root@rvweb03
+ DEBUG [6a781fa7] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [aedc528e] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6a781fa7] Finished in 0.219 seconds with exit status 0 (successful).
+  INFO [aedc528e] Finished in 0.232 seconds with exit status 0 (successful).
+  INFO [aa49774b] Finished in 0.238 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-017a1d11c2f93c8bac97.sh 0.0%
+  INFO Uploading /tmp/git-ssh-017a1d11c2f93c8bac97.sh 100.0%
+ DEBUG Uploading /tmp/git-ssh-017a1d11c2f93c8bac97.sh 0.0%
+  INFO Uploading /tmp/git-ssh-017a1d11c2f93c8bac97.sh 100.0%
+ DEBUG Uploading /tmp/git-ssh-017a1d11c2f93c8bac97.sh 0.0%
+  INFO Uploading /tmp/git-ssh-017a1d11c2f93c8bac97.sh 100.0%
+  INFO [e7adda08] Running /usr/bin/env chmod 700 /tmp/git-ssh-017a1d11c2f93c8bac97.sh as root@rvweb01
+ DEBUG [e7adda08] Command: /usr/bin/env chmod 700 /tmp/git-ssh-017a1d11c2f93c8bac97.sh
+  INFO [d4361075] Running /usr/bin/env chmod 700 /tmp/git-ssh-017a1d11c2f93c8bac97.sh as root@rvweb03
+ DEBUG [d4361075] Command: /usr/bin/env chmod 700 /tmp/git-ssh-017a1d11c2f93c8bac97.sh
+  INFO [c5b9cbcf] Running /usr/bin/env chmod 700 /tmp/git-ssh-017a1d11c2f93c8bac97.sh as root@rvweb02
+ DEBUG [c5b9cbcf] Command: /usr/bin/env chmod 700 /tmp/git-ssh-017a1d11c2f93c8bac97.sh
+  INFO [e7adda08] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [d4361075] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [c5b9cbcf] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [b10a6c6c] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb01
+  INFO [48bc866b] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb02
+ DEBUG [48bc866b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+  INFO [58c402bd] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb03
+ DEBUG [58c402bd] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [b10a6c6c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [b10a6c6c] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b	HEAD
+  INFO [b10a6c6c] Finished in 1.151 seconds with exit status 0 (successful).
+ DEBUG [48bc866b] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b	HEAD
+ DEBUG [58c402bd] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b	HEAD
+  INFO [48bc866b] Finished in 1.176 seconds with exit status 0 (successful).
+  INFO [58c402bd] Finished in 1.176 seconds with exit status 0 (successful).
+  INFO [a0c1d222] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb03
+  INFO [81778aae] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb01
+ DEBUG [81778aae] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [648806d0] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb02
+ DEBUG [a0c1d222] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+ DEBUG [648806d0] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [81778aae] Finished in 0.018 seconds with exit status 0 (successful).
+  INFO [a0c1d222] Finished in 0.017 seconds with exit status 0 (successful).
+  INFO [648806d0] Finished in 0.018 seconds with exit status 0 (successful).
+ DEBUG [7de8120d] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb03
+ DEBUG [7de8120d] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [63f7bc57] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb02
+ DEBUG [63f7bc57] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [0d1d627b] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb01
+ DEBUG [0d1d627b] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [0d1d627b] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [5c62b609] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb01
+ DEBUG [5c62b609] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [7de8120d] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [776d5a02] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb03
+ DEBUG [776d5a02] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [63f7bc57] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [0125b4dc] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb02
+ DEBUG [0125b4dc] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [776d5a02] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [5c62b609] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [776d5a02] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [0125b4dc] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [5c62b609] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [0125b4dc] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [8a5b8028] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb02
+ DEBUG [8a5b8028] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [964e6ae7] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb01
+ DEBUG [964e6ae7] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [923e3afa] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb03
+ DEBUG [923e3afa] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [923e3afa] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [964e6ae7] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [8a5b8028] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [77df45f4] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [77df45f4] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [a3f3992d] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [a3f3992d] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [6f09e873] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [6f09e873] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [6f09e873] Finished in 0.040 seconds with exit status 0 (successful).
+  INFO [ad7e4e03] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb03
+ DEBUG [ad7e4e03] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [a3f3992d] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [a5eba373] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb01
+ DEBUG [a5eba373] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [77df45f4] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [d9455f9d] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb02
+ DEBUG [d9455f9d] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+  INFO [ad7e4e03] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [2b67ffef] Running /usr/bin/env git remote update --prune as root@rvweb03
+ DEBUG [2b67ffef] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git remote update --prune )
+  INFO [a5eba373] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [bd152669] Running /usr/bin/env git remote update --prune as root@rvweb01
+ DEBUG [bd152669] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git remote update --prune )
+  INFO [d9455f9d] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [6931b897] Running /usr/bin/env git remote update --prune as root@rvweb02
+ DEBUG [6931b897] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [bd152669] 	Récupération de origin
+ DEBUG [2b67ffef] 	Récupération de origin
+ DEBUG [6931b897] 	Récupération de origin
+  INFO [bd152669] Finished in 1.165 seconds with exit status 0 (successful).
+  INFO [2b67ffef] Finished in 1.177 seconds with exit status 0 (successful).
+  INFO [6931b897] Finished in 1.199 seconds with exit status 0 (successful).
+ DEBUG [27807b8a] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [d65097cc] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [d65097cc] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [cb00f68a] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [27807b8a] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [cb00f68a] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [27807b8a] Finished in 0.013 seconds with exit status 0 (successful).
+  INFO [42408e42] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512131345 as root@rvweb01
+ DEBUG [42408e42] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512131345 )
+ DEBUG [cb00f68a] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [6c42029e] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512131345 as root@rvweb03
+ DEBUG [6c42029e] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512131345 )
+ DEBUG [d65097cc] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [f19d8784] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512131345 as root@rvweb02
+ DEBUG [f19d8784] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220512131345 )
+  INFO [42408e42] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [dacd83d0] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512131345 as root@rvweb01
+ DEBUG [dacd83d0] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512131345 )
+  INFO [6c42029e] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [c06756b2] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512131345 as root@rvweb03
+ DEBUG [c06756b2] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512131345 )
+  INFO [f19d8784] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [a917f551] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512131345 as root@rvweb02
+ DEBUG [a917f551] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220512131345 )
+  INFO [dacd83d0] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [c06756b2] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [a917f551] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [0c08ae7e] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [0c08ae7e] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [3432d7cd] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [3432d7cd] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [d3c9ce78] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [d3c9ce78] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [0c08ae7e] Finished in 0.013 seconds with exit status 0 (successful).
+ DEBUG [b192889d] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb01
+ DEBUG [b192889d] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [3432d7cd] Finished in 0.018 seconds with exit status 0 (successful).
+ DEBUG [7a4bb1de] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb03
+ DEBUG [7a4bb1de] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d3c9ce78] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [c5a241cb] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb02
+ DEBUG [c5a241cb] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-017a1d11c2f93c8bac97.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b192889d] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [b192889d] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [7a4bb1de] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [7a4bb1de] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [c5a241cb] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [c5a241cb] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [79008961] Running if test ! -d /var/www/cakephp/releases/20220512131345; then echo "Directory does not exist '/var/www/cakephp/releases/20220512131345'" 1>&2; false; fi as root@rvweb01
+ DEBUG [79008961] Command: if test ! -d /var/www/cakephp/releases/20220512131345; then echo "Directory does not exist '/var/www/cakephp/releases/20220512131345'" 1>&2; false; fi
+ DEBUG [38d5ac61] Running if test ! -d /var/www/cakephp/releases/20220512131345; then echo "Directory does not exist '/var/www/cakephp/releases/20220512131345'" 1>&2; false; fi as root@rvweb02
+ DEBUG [38d5ac61] Command: if test ! -d /var/www/cakephp/releases/20220512131345; then echo "Directory does not exist '/var/www/cakephp/releases/20220512131345'" 1>&2; false; fi
+ DEBUG [4f53ca3f] Running if test ! -d /var/www/cakephp/releases/20220512131345; then echo "Directory does not exist '/var/www/cakephp/releases/20220512131345'" 1>&2; false; fi as root@rvweb03
+ DEBUG [4f53ca3f] Command: if test ! -d /var/www/cakephp/releases/20220512131345; then echo "Directory does not exist '/var/www/cakephp/releases/20220512131345'" 1>&2; false; fi
+ DEBUG [79008961] Finished in 0.013 seconds with exit status 0 (successful).
+  INFO [ccd0de62] Running /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION as root@rvweb01
+ DEBUG [ccd0de62] Command: cd /var/www/cakephp/releases/20220512131345 && /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION
+ DEBUG [4f53ca3f] Finished in 0.015 seconds with exit status 0 (successful).
+  INFO [d671e3d2] Running /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION as root@rvweb03
+ DEBUG [d671e3d2] Command: cd /var/www/cakephp/releases/20220512131345 && /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION
+ DEBUG [38d5ac61] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [0dc978af] Running /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION as root@rvweb02
+ DEBUG [0dc978af] Command: cd /var/www/cakephp/releases/20220512131345 && /usr/bin/env echo "6dfd004ed442606c1e1ed8a75571c3694eff6f6b" > REVISION
+  INFO [ccd0de62] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [d671e3d2] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [0dc978af] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [9d3ae266] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220512131345 /var/www/cakephp/releases/current as root@rvweb01
+  INFO [6646a039] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220512131345 /var/www/cakephp/releases/current as root@rvweb02
+ DEBUG [6646a039] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220512131345 /var/www/cakephp/releases/current
+ DEBUG [9d3ae266] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220512131345 /var/www/cakephp/releases/current
+  INFO [ff5df733] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220512131345 /var/www/cakephp/releases/current as root@rvweb03
+ DEBUG [ff5df733] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220512131345 /var/www/cakephp/releases/current
+  INFO [ff5df733] Finished in 0.015 seconds with exit status 0 (successful).
+  INFO [f16b1b19] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb03
+ DEBUG [f16b1b19] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [9d3ae266] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [f1aa1214] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb01
+ DEBUG [f1aa1214] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [6646a039] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [93d45d39] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb02
+ DEBUG [93d45d39] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [f16b1b19] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [f1aa1214] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [93d45d39] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [b16bacd2] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb02
+ DEBUG [b16bacd2] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [ec821268] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb01
+ DEBUG [ce60b317] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb03
+ DEBUG [ce60b317] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [ec821268] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [ec821268] 	20220505095304	20220506151806	20220512122154	20220512131345
+ DEBUG [ce60b317] 	20220505095304	20220506151806	20220512122154	20220512131345
+ DEBUG [ec821268] Finished in 0.019 seconds with exit status 0 (successful).
+ DEBUG [ce60b317] Finished in 0.020 seconds with exit status 0 (successful).
+ DEBUG [b16bacd2] 	20220505095304	20220506151806	20220512122154	20220512131345
+ DEBUG [b16bacd2] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [026b211a] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb01
+ DEBUG [5a58990f] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb02
+ DEBUG [5a58990f] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [23ae565b] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb03
+ DEBUG [026b211a] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [23ae565b] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [026b211a] Finished in 0.018 seconds with exit status 0 (successful).
+  INFO [6582d72d] Running /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512131345 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb01
+ DEBUG [6582d72d] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512131345 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [23ae565b] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [3835b297] Running /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512131345 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb03
+ DEBUG [3835b297] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512131345 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [5a58990f] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [6bac6c17] Running /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512131345 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb02
+ DEBUG [6bac6c17] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at 6dfd004ed442606c1e1ed8a75571c3694eff6f6b) deployed as release 20220512131345 by sylvain" >> /var/www/cakephp/revisions.log
+  INFO [6582d72d] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [3835b297] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [6bac6c17] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-09-30 12:03:29 +0200 cap recette deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [21fd2142] Running /usr/bin/env mkdir -p /tmp as root@rvweb02
+  INFO [0d2f47ef] Running /usr/bin/env mkdir -p /tmp as root@rvweb01
+ DEBUG [0d2f47ef] Command: /usr/bin/env mkdir -p /tmp
+  INFO [298f0ff3] Running /usr/bin/env mkdir -p /tmp as root@rvweb03
+ DEBUG [21fd2142] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [298f0ff3] Command: /usr/bin/env mkdir -p /tmp
+  INFO [21fd2142] Finished in 0.248 seconds with exit status 0 (successful).
+  INFO [298f0ff3] Finished in 0.297 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-9366ef3a94d22d197ec1.sh 0.0%
+  INFO Uploading /tmp/git-ssh-9366ef3a94d22d197ec1.sh 100.0%
+  INFO [0d2f47ef] Finished in 0.319 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-9366ef3a94d22d197ec1.sh 0.0%
+  INFO Uploading /tmp/git-ssh-9366ef3a94d22d197ec1.sh 100.0%
+  INFO [6b0c6fb8] Running /usr/bin/env chmod 700 /tmp/git-ssh-9366ef3a94d22d197ec1.sh as root@rvweb02
+ DEBUG [6b0c6fb8] Command: /usr/bin/env chmod 700 /tmp/git-ssh-9366ef3a94d22d197ec1.sh
+ DEBUG Uploading /tmp/git-ssh-9366ef3a94d22d197ec1.sh 0.0%
+  INFO Uploading /tmp/git-ssh-9366ef3a94d22d197ec1.sh 100.0%
+  INFO [47943118] Running /usr/bin/env chmod 700 /tmp/git-ssh-9366ef3a94d22d197ec1.sh as root@rvweb03
+ DEBUG [47943118] Command: /usr/bin/env chmod 700 /tmp/git-ssh-9366ef3a94d22d197ec1.sh
+  INFO [6b0c6fb8] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [421723ee] Running /usr/bin/env chmod 700 /tmp/git-ssh-9366ef3a94d22d197ec1.sh as root@rvweb01
+ DEBUG [421723ee] Command: /usr/bin/env chmod 700 /tmp/git-ssh-9366ef3a94d22d197ec1.sh
+  INFO [47943118] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [421723ee] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [f4da30a7] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb01
+  INFO [7213e0af] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb02
+ DEBUG [7213e0af] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+  INFO [b9bdd82a] Running /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD as root@rvweb03
+ DEBUG [b9bdd82a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [f4da30a7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git ls-remote git@github.com:gitleha/cakephp.git HEAD )
+ DEBUG [7213e0af] 	e929152ce6af2900414b30ecbc1992689a1d4060	HEAD
+  INFO [7213e0af] Finished in 1.221 seconds with exit status 0 (successful).
+ DEBUG [b9bdd82a] 	e929152ce6af2900414b30ecbc1992689a1d4060	HEAD
+  INFO [b9bdd82a] Finished in 1.312 seconds with exit status 0 (successful).
+ DEBUG [f4da30a7] 	e929152ce6af2900414b30ecbc1992689a1d4060	HEAD
+  INFO [f4da30a7] Finished in 1.553 seconds with exit status 0 (successful).
+  INFO [55b121e1] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb01
+ DEBUG [55b121e1] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [93f543bc] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb02
+  INFO [37ff9bbb] Running /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases as root@rvweb03
+ DEBUG [93f543bc] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+ DEBUG [37ff9bbb] Command: /usr/bin/env mkdir -p /var/www/cakephp/shared /var/www/cakephp/releases
+  INFO [37ff9bbb] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [93f543bc] Finished in 0.012 seconds with exit status 0 (successful).
+  INFO [55b121e1] Finished in 0.015 seconds with exit status 0 (successful).
+ DEBUG [7ca72fa8] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb01
+ DEBUG [2eb3a199] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb02
+ DEBUG [2eb3a199] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [205a01f5] Running [ -f /var/www/cakephp/current/REVISION ] as root@rvweb03
+ DEBUG [205a01f5] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [7ca72fa8] Command: [ -f /var/www/cakephp/current/REVISION ]
+ DEBUG [205a01f5] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [6da2f666] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb03
+ DEBUG [6da2f666] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [2eb3a199] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [852f14b2] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb02
+ DEBUG [852f14b2] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [7ca72fa8] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [91669370] Running /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null as root@rvweb01
+ DEBUG [91669370] Command: /usr/bin/env cat /var/www/cakephp/current/REVISION 2>/dev/null
+ DEBUG [6da2f666] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [6da2f666] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [852f14b2] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [852f14b2] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [91669370] 	6dfd004ed442606c1e1ed8a75571c3694eff6f6b
+ DEBUG [91669370] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [fcab8157] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb01
+ DEBUG [46ac3d9d] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb02
+ DEBUG [46ac3d9d] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [a4076549] Running [ -f /var/www/cakephp/repo/HEAD ] as root@rvweb03
+ DEBUG [fcab8157] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [a4076549] Command: [ -f /var/www/cakephp/repo/HEAD ]
+ DEBUG [a4076549] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [46ac3d9d] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [fcab8157] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/cakephp/repo
+ DEBUG [c21088c8] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [b52efc0a] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [b52efc0a] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [ca71bea5] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [c21088c8] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [ca71bea5] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [ca71bea5] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [5a1654c3] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb03
+ DEBUG [5a1654c3] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [b52efc0a] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [54f2be32] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb02
+ DEBUG [54f2be32] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+ DEBUG [c21088c8] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [79a4e460] Running /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git as root@rvweb01
+ DEBUG [79a4e460] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git remote set-url origin git@github.com:gitleha/cakephp.git )
+  INFO [5a1654c3] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [350647c2] Running /usr/bin/env git remote update --prune as root@rvweb03
+ DEBUG [350647c2] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git remote update --prune )
+  INFO [54f2be32] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [f09d8b83] Running /usr/bin/env git remote update --prune as root@rvweb02
+ DEBUG [f09d8b83] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git remote update --prune )
+  INFO [79a4e460] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [696391f7] Running /usr/bin/env git remote update --prune as root@rvweb01
+ DEBUG [696391f7] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [350647c2] 	Récupération de origin
+ DEBUG [f09d8b83] 	Récupération de origin
+ DEBUG [696391f7] 	Récupération de origin
+ DEBUG [350647c2] 	Depuis github.com:gitleha/cakephp
+   6dfd004..e929152  master     -> master
+  INFO [350647c2] Finished in 1.375 seconds with exit status 0 (successful).
+ DEBUG [f09d8b83] 	Depuis github.com:gitleha/cakephp
+ DEBUG [f09d8b83] 	   6dfd004..e929152  master     -> master
+  INFO [f09d8b83] Finished in 1.380 seconds with exit status 0 (successful).
+ DEBUG [696391f7] 	Depuis github.com:gitleha/cakephp
+   6dfd004..e929152  master     -> master
+  INFO [696391f7] Finished in 1.391 seconds with exit status 0 (successful).
+ DEBUG [f0b626a3] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [4b2b268c] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [4b2b268c] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [f43e7615] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [f43e7615] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [f0b626a3] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [f43e7615] Finished in 0.015 seconds with exit status 0 (successful).
+  INFO [6dafdd4d] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220930100331 as root@rvweb03
+ DEBUG [6dafdd4d] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220930100331 )
+ DEBUG [4b2b268c] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [f7d77adf] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220930100331 as root@rvweb02
+ DEBUG [f7d77adf] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220930100331 )
+ DEBUG [f0b626a3] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [b8fafb8a] Running /usr/bin/env mkdir -p /var/www/cakephp/releases/20220930100331 as root@rvweb01
+ DEBUG [b8fafb8a] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env mkdir -p /var/www/cakephp/releases/20220930100331 )
+  INFO [6dafdd4d] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [e5940fb7] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220930100331 as root@rvweb03
+ DEBUG [e5940fb7] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220930100331 )
+  INFO [f7d77adf] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [e0cb1041] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220930100331 as root@rvweb02
+ DEBUG [e0cb1041] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220930100331 )
+  INFO [b8fafb8a] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [d5aba06f] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220930100331 as root@rvweb01
+ DEBUG [d5aba06f] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/cakephp/releases/20220930100331 )
+  INFO [e5940fb7] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [e0cb1041] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [d5aba06f] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG [d48b4763] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb02
+ DEBUG [c6efda1f] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb01
+ DEBUG [c6efda1f] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [7cd6b35e] Running if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi as root@rvweb03
+ DEBUG [d48b4763] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [7cd6b35e] Command: if test ! -d /var/www/cakephp/repo; then echo "Directory does not exist '/var/www/cakephp/repo'" 1>&2; false; fi
+ DEBUG [7cd6b35e] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [136f3ae4] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb03
+ DEBUG [136f3ae4] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d48b4763] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [4db6c01b] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb02
+ DEBUG [4db6c01b] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [c6efda1f] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [1c2db6f4] Running /usr/bin/env git rev-list --max-count=1 master as root@rvweb01
+ DEBUG [1c2db6f4] Command: cd /var/www/cakephp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9366ef3a94d22d197ec1.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [136f3ae4] 	e929152ce6af2900414b30ecbc1992689a1d4060
+ DEBUG [136f3ae4] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [4db6c01b] 	e929152ce6af2900414b30ecbc1992689a1d4060
+ DEBUG [4db6c01b] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [1c2db6f4] 	e929152ce6af2900414b30ecbc1992689a1d4060
+ DEBUG [1c2db6f4] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [853862a4] Running if test ! -d /var/www/cakephp/releases/20220930100331; then echo "Directory does not exist '/var/www/cakephp/releases/20220930100331'" 1>&2; false; fi as root@rvweb03
+ DEBUG [46054afe] Running if test ! -d /var/www/cakephp/releases/20220930100331; then echo "Directory does not exist '/var/www/cakephp/releases/20220930100331'" 1>&2; false; fi as root@rvweb01
+ DEBUG [46054afe] Command: if test ! -d /var/www/cakephp/releases/20220930100331; then echo "Directory does not exist '/var/www/cakephp/releases/20220930100331'" 1>&2; false; fi
+ DEBUG [d5619b1e] Running if test ! -d /var/www/cakephp/releases/20220930100331; then echo "Directory does not exist '/var/www/cakephp/releases/20220930100331'" 1>&2; false; fi as root@rvweb02
+ DEBUG [d5619b1e] Command: if test ! -d /var/www/cakephp/releases/20220930100331; then echo "Directory does not exist '/var/www/cakephp/releases/20220930100331'" 1>&2; false; fi
+ DEBUG [853862a4] Command: if test ! -d /var/www/cakephp/releases/20220930100331; then echo "Directory does not exist '/var/www/cakephp/releases/20220930100331'" 1>&2; false; fi
+ DEBUG [853862a4] Finished in 0.012 seconds with exit status 0 (successful).
+  INFO [c598e70b] Running /usr/bin/env echo "e929152ce6af2900414b30ecbc1992689a1d4060" > REVISION as root@rvweb03
+ DEBUG [c598e70b] Command: cd /var/www/cakephp/releases/20220930100331 && /usr/bin/env echo "e929152ce6af2900414b30ecbc1992689a1d4060" > REVISION
+ DEBUG [d5619b1e] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [1f23cf17] Running /usr/bin/env echo "e929152ce6af2900414b30ecbc1992689a1d4060" > REVISION as root@rvweb02
+ DEBUG [1f23cf17] Command: cd /var/www/cakephp/releases/20220930100331 && /usr/bin/env echo "e929152ce6af2900414b30ecbc1992689a1d4060" > REVISION
+ DEBUG [46054afe] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [4770a50d] Running /usr/bin/env echo "e929152ce6af2900414b30ecbc1992689a1d4060" > REVISION as root@rvweb01
+ DEBUG [4770a50d] Command: cd /var/www/cakephp/releases/20220930100331 && /usr/bin/env echo "e929152ce6af2900414b30ecbc1992689a1d4060" > REVISION
+  INFO [c598e70b] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [1f23cf17] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [4770a50d] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [d7edf526] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220930100331 /var/www/cakephp/releases/current as root@rvweb02
+ DEBUG [d7edf526] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220930100331 /var/www/cakephp/releases/current
+  INFO [18a679ff] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220930100331 /var/www/cakephp/releases/current as root@rvweb03
+ DEBUG [18a679ff] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220930100331 /var/www/cakephp/releases/current
+  INFO [7e34a799] Running /usr/bin/env ln -s /var/www/cakephp/releases/20220930100331 /var/www/cakephp/releases/current as root@rvweb01
+ DEBUG [7e34a799] Command: /usr/bin/env ln -s /var/www/cakephp/releases/20220930100331 /var/www/cakephp/releases/current
+  INFO [18a679ff] Finished in 0.016 seconds with exit status 0 (successful).
+  INFO [373998c2] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb03
+ DEBUG [373998c2] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [7e34a799] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [ed48153e] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb01
+ DEBUG [ed48153e] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [d7edf526] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [86a2d35a] Running /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp as root@rvweb02
+ DEBUG [86a2d35a] Command: /usr/bin/env mv /var/www/cakephp/releases/current /var/www/cakephp
+  INFO [373998c2] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [86a2d35a] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [ed48153e] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [f6d49e15] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb02
+ DEBUG [58733f67] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb01
+ DEBUG [58733f67] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [b28e03f8] Running /usr/bin/env ls -x /var/www/cakephp/releases as root@rvweb03
+ DEBUG [b28e03f8] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [f6d49e15] Command: /usr/bin/env ls -x /var/www/cakephp/releases
+ DEBUG [b28e03f8] 	20220505095304	20220506151806	20220512122154	20220512131345	20220930100331
+ DEBUG [b28e03f8] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 5 deployed releases on rvweb03
+ DEBUG [0cf15712] Running [ -d /var/www/cakephp/current ] as root@rvweb03
+ DEBUG [0cf15712] Command: [ -d /var/www/cakephp/current ]
+ DEBUG [f6d49e15] 	20220505095304	20220506151806	20220512122154	20220512131345	20220930100331
+ DEBUG [f6d49e15] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 5 deployed releases on rvweb02
+ DEBUG [04b3bee8] Running [ -d /var/www/cakephp/current ] as root@rvweb02
+ DEBUG [04b3bee8] Command: [ -d /var/www/cakephp/current ]
+ DEBUG [58733f67] 	20220505095304	20220506151806	20220512122154	20220512131345	20220930100331
+ DEBUG [58733f67] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 5 deployed releases on rvweb01
+ DEBUG [03ca9c14] Running [ -d /var/www/cakephp/current ] as root@rvweb01
+ DEBUG [03ca9c14] Command: [ -d /var/www/cakephp/current ]
+ DEBUG [0cf15712] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [e2d04e31] Running /usr/bin/env readlink /var/www/cakephp/current as root@rvweb03
+ DEBUG [e2d04e31] Command: /usr/bin/env readlink /var/www/cakephp/current
+ DEBUG [04b3bee8] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [3292f50e] Running /usr/bin/env readlink /var/www/cakephp/current as root@rvweb02
+ DEBUG [3292f50e] Command: /usr/bin/env readlink /var/www/cakephp/current
+ DEBUG [03ca9c14] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [57d6eb97] Running /usr/bin/env readlink /var/www/cakephp/current as root@rvweb01
+ DEBUG [57d6eb97] Command: /usr/bin/env readlink /var/www/cakephp/current
+ DEBUG [e2d04e31] 	/var/www/cakephp/releases/20220930100331
+ DEBUG [e2d04e31] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO No old releases (keeping newest 5) on rvweb03
+ DEBUG [3292f50e] 	/var/www/cakephp/releases/20220930100331
+ DEBUG [3292f50e] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO No old releases (keeping newest 5) on rvweb02
+ DEBUG [57d6eb97] 	/var/www/cakephp/releases/20220930100331
+ DEBUG [57d6eb97] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO No old releases (keeping newest 5) on rvweb01
+ DEBUG [419bec84] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb02
+ DEBUG [419bec84] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [30851bd6] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb03
+ DEBUG [30851bd6] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [7bc3665c] Running if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi as root@rvweb01
+ DEBUG [7bc3665c] Command: if test ! -d /var/www/cakephp/releases; then echo "Directory does not exist '/var/www/cakephp/releases'" 1>&2; false; fi
+ DEBUG [30851bd6] Finished in 0.012 seconds with exit status 0 (successful).
+  INFO [f40af509] Running /usr/bin/env echo "Branch master (at e929152ce6af2900414b30ecbc1992689a1d4060) deployed as release 20220930100331 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb03
+ DEBUG [f40af509] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at e929152ce6af2900414b30ecbc1992689a1d4060) deployed as release 20220930100331 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [419bec84] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [12d23fd5] Running /usr/bin/env echo "Branch master (at e929152ce6af2900414b30ecbc1992689a1d4060) deployed as release 20220930100331 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb02
+ DEBUG [12d23fd5] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at e929152ce6af2900414b30ecbc1992689a1d4060) deployed as release 20220930100331 by sylvain" >> /var/www/cakephp/revisions.log
+ DEBUG [7bc3665c] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [14d33595] Running /usr/bin/env echo "Branch master (at e929152ce6af2900414b30ecbc1992689a1d4060) deployed as release 20220930100331 by sylvain" >> /var/www/cakephp/revisions.log as root@rvweb01
+ DEBUG [14d33595] Command: cd /var/www/cakephp/releases && /usr/bin/env echo "Branch master (at e929152ce6af2900414b30ecbc1992689a1d4060) deployed as release 20220930100331 by sylvain" >> /var/www/cakephp/revisions.log
+  INFO [f40af509] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [12d23fd5] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [14d33595] Finished in 0.057 seconds with exit status 0 (successful).

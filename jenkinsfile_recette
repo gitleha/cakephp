@@ -1,0 +1,21 @@
+pipeline {
+   agent {
+        dockerfile {
+            dir 'docker'
+            additionalBuildArgs '--build-arg ssh_prv_key="$(cat ~/.ssh/id_rsa)" --build-arg ssh_pub_key="$(cat ~/.ssh/id_rsa.pub)" --build-arg composer_auth="$(cat ~/.composer/auth.json)"'
+            args '-u 0 -t'
+        }
+    }
+    stages {
+        stage('build') {
+            steps {
+                checkout scm
+            }
+        }
+        stage ('deploy') {
+            steps {
+                sh 'eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa && bundle install && bundle exec cap recette deploy --trace'
+            }
+        }
+   }
+}
