@@ -1033,7 +1033,7 @@ class Xml extends XmlNode {
  * @return string String representation
  * @access public
  */
-	function toString($options = array()) {
+	function toString($options = array(), $depth = 0) {
 		if (is_bool($options)) {
 			$options = array('header' => $options);
 		}
